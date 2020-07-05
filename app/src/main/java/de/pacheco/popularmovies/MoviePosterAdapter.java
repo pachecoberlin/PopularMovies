@@ -9,7 +9,13 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
+import de.pacheco.popularmovies.model.Movie;
+
 public class MoviePosterAdapter extends RecyclerView.Adapter<MoviePosterViewHolder> {
+    private List<Movie> movies;
+
     @NonNull
     @Override
     public MoviePosterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -21,11 +27,18 @@ public class MoviePosterAdapter extends RecyclerView.Adapter<MoviePosterViewHold
 
     @Override
     public void onBindViewHolder(@NonNull MoviePosterViewHolder holder, int position) {
-
+        if (movies != null && movies.size() - 1 >= position) {
+            holder.setMovie(movies.get(position));
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return movies == null ? 0 : movies.size();
+    }
+
+    public void setMovieData(List<Movie> movies) {
+        this.movies = movies;
+        notifyDataSetChanged();
     }
 }
