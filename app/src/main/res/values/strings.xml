@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Popular Movies</string>
-    <string name="no_internet_message">Please connect to internet and restart</string>
+    <string name="no_internet_message">Please connect to internet and restart or provide
+        API key</string>
     <string name="movie_poster">Movie Poster</string>
     <string name="sort_by_rating">Sort By Rating</string>
     <string name="sort_by_popularity">Sort By Popularity</string>
