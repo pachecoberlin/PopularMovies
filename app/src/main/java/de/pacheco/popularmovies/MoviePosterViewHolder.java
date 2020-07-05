@@ -16,7 +16,6 @@ public class MoviePosterViewHolder extends RecyclerView.ViewHolder {
     public MoviePosterViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.iv_movie_poster);
-
     }
 
     public void setMovie(Movie movie) {
