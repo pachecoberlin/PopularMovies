@@ -6,7 +6,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import de.pacheco.popularmovies.model.Movie;
 import de.pacheco.popularmovies.util.MoviesUtil;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
+    private Spinner spinner;
+    private View contents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         progressBar = findViewById(R.id.pb_loading_indicator);
         networkErrorMessage = findViewById(R.id.tv_error_message_display);
+        contents = findViewById(R.id.contents);
+        spinner = findViewById(R.id.spinner_sortBy);
+        spinner.setOnItemSelectedListener(getSpinnerListener());
         moviePosters = findViewById(R.id.rv_movie_overview);
         moviePosters.setHasFixedSize(true);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
@@ -44,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter();
         moviePosters.setAdapter(moviePosterAdapter);
-        new FetchMoviesTask().execute();
+        new FetchMoviesTask().execute(MoviesUtil.POPULAR);
     }
 
     @Override
@@ -60,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
         sortBy(itemId);
+        //TODO should the next line better be called within sortBy method or not at all and
+        // better only notifyDataSetChanged()?
         moviePosterAdapter.setMovieData(movies);
         return true;
     }
@@ -82,19 +90,33 @@ public class MainActivity extends AppCompatActivity {
 
     private void showErrorMessage() {
         networkErrorMessage.setVisibility(View.VISIBLE);
-        moviePosters.setVisibility(View.INVISIBLE);
+        contents.setVisibility(View.INVISIBLE);
     }
 
     private void showMoviePosterView() {
         networkErrorMessage.setVisibility(View.INVISIBLE);
-        moviePosters.setVisibility(View.VISIBLE);
+        contents.setVisibility(View.VISIBLE);
+    }
+
+    public AdapterView.OnItemSelectedListener getSpinnerListener() {
+        return new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                new FetchMoviesTask().execute(i==1?MoviesUtil.POPULAR:MoviesUtil.RATED);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        };
     }
 
     /**
      * TODO Why do you teach us deprecated classes? This seems deprecated since november last year.
      * TODO Why is it good practice to not make an extra class for this?
      */
-    public class FetchMoviesTask extends AsyncTask<Void, List<Movie>, List<Movie>> {
+    public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
 
         @Override
         protected void onPreExecute() {
@@ -103,10 +125,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected List<Movie> doInBackground(Void... params) {
-            List<Movie> movies = MoviesUtil.getFirstMovies();
+        protected List<Movie> doInBackground(String... params) {
+            if (params.length < 1) {
+                return MoviesUtil.getFirstMovies();
+            }
+            String criteria = params[0];
+            List<Movie> movies = MoviesUtil.getFirstMovies(criteria);
             publishProgress(movies);
-            MoviesUtil.addAllMovies(movies);
+            MoviesUtil.addAllMovies(movies, criteria);
             return movies;
         }
 
