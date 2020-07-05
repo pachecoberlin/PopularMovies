@@ -2,4 +2,10 @@
     <string name="app_name">Popular Movies</string>
     <string name="no_internet_message">Please connect to internet</string>
     <string name="movie_poster">Movie Poster</string>
+    <string name="sort_by_rating">Sort By Rating</string>
+    <string name="sort_by_popularity">Sort By Popularity</string>
+    <string-array name="sortByCategories">
+        <item>@string/sort_by_popularity</item>
+        <item>@string/sort_by_rating</item>
+    </string-array>
 </resources>
