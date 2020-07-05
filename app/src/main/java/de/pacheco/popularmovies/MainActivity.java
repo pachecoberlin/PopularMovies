@@ -26,12 +26,10 @@ import de.pacheco.popularmovies.util.MoviesUtil;
 public class MainActivity extends AppCompatActivity {
     private static String TAG = MainActivity.class.getSimpleName();
 
-    private RecyclerView moviePosters;
     private MoviePosterAdapter moviePosterAdapter;
     private ProgressBar progressBar;
     private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
-    private Spinner spinner;
     private View contents;
 
     @Override
@@ -41,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.pb_loading_indicator);
         networkErrorMessage = findViewById(R.id.tv_error_message_display);
         contents = findViewById(R.id.contents);
-        spinner = findViewById(R.id.spinner_sortBy);
+        Spinner spinner = findViewById(R.id.spinner_sortBy);
         spinner.setOnItemSelectedListener(getSpinnerListener());
-        moviePosters = findViewById(R.id.rv_movie_overview);
+        RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);
         moviePosters.setHasFixedSize(true);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
                 RecyclerView.VERTICAL, false);
         moviePosters.setLayoutManager(layoutManager);
-        moviePosterAdapter = new MoviePosterAdapter();
+        moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
         new FetchMoviesTask().execute(MoviesUtil.POPULAR);
     }
@@ -102,19 +100,18 @@ public class MainActivity extends AppCompatActivity {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                new FetchMoviesTask().execute(i==1?MoviesUtil.POPULAR:MoviesUtil.RATED);
+                new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-                return;
             }
         };
     }
 
     /**
+     * TODO Is it good practice to not make an extra class for this?
      * TODO Why do you teach us deprecated classes? This seems deprecated since november last year.
-     * TODO Why is it good practice to not make an extra class for this?
      */
     public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
 

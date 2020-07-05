@@ -15,17 +15,20 @@ public class Movie {
     @SerializedName("id")
     public int id;
 
-    @SerializedName("original_title")
+    @SerializedName("title")
     public String title;
 
+    @SerializedName("original_title")
+    public String originalTitle;
+
     @SerializedName("overview")
-    public String overview;
+    public String plot;
 
     @SerializedName("release_date")
-    public String release_date;
+    public String releaseDate;
 
     @SerializedName("original_language")
-    public String original_language;
+    public String originalLanguage;
 
     private String fullPosterPath;
 
@@ -35,5 +38,10 @@ public class Movie {
 
     public void setFullPosterPath(String path) {
         this.fullPosterPath = path;
+    }
+
+    public String[] getInformationAsArray() {
+        return new String[]{String.valueOf(id), title, fullPosterPath, releaseDate,
+                String.valueOf(rating), plot, originalLanguage, originalTitle};
     }
 }

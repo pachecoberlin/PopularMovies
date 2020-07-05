@@ -4,6 +4,10 @@
     <string name="movie_poster">Movie Poster</string>
     <string name="sort_by_rating">Sort By Rating</string>
     <string name="sort_by_popularity">Sort By Popularity</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="year_of_release">Year of release</string>
+    <string name="vote_average">vote average</string>
+    <string name="plot_synopsis">plot synopsis</string>
     <string-array name="sortByCategories">
         <item>most popular</item>
         <item>highest rated</item>

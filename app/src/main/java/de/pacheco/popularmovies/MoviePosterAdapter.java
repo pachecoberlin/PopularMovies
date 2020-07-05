@@ -1,5 +1,6 @@
 package de.pacheco.popularmovies;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,11 @@ import de.pacheco.popularmovies.model.Movie;
 
 public class MoviePosterAdapter extends RecyclerView.Adapter<MoviePosterViewHolder> {
     private List<Movie> movies;
+    private Activity activity;
+
+    public MoviePosterAdapter(MainActivity mainActivity) {
+        this.activity = mainActivity;
+    }
 
     @NonNull
     @Override
@@ -21,7 +27,7 @@ public class MoviePosterAdapter extends RecyclerView.Adapter<MoviePosterViewHold
         Context context = parent.getContext();
         View view = LayoutInflater.from(context).inflate(R.layout.movie_poster_item, parent,
                 false);
-        return new MoviePosterViewHolder(view);
+        return new MoviePosterViewHolder(view, activity);
     }
 
     @Override
