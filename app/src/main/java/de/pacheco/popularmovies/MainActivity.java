@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         progressBar = binding.pbLoadingIndicator;
         networkErrorMessage = binding.tvErrorMessageDisplay;
         contents = binding.contents;
-        Spinner spinner = findViewById(R.id.spinner_sortBy);
+//        Spinner spinner = findViewById(R.id.spinner_sortBy);
+        Spinner spinner = binding.spinnerSortBy;
         spinner.setOnItemSelectedListener(getSpinnerListener());
         RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);
         moviePosters.setHasFixedSize(true);
