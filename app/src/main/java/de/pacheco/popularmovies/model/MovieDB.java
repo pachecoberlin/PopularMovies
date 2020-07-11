@@ -16,7 +16,7 @@ public abstract class MovieDB extends RoomDatabase {
         if (sInstance == null) {
             synchronized (LOCK) {
                 sInstance = Room.databaseBuilder(context.getApplicationContext(), MovieDB.class,
-                        MovieDB.DATABASE_NAME).build();
+                        MovieDB.DATABASE_NAME).allowMainThreadQueries().build();
             }
         }
         return sInstance;

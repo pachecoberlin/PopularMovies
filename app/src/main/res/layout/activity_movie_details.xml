@@ -64,7 +64,8 @@
                         android:id="@+id/favorite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Favorite" />
+                        android:contentDescription="@string/add_to_favorites"
+                        android:text="@string/add_to_favorites" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -75,17 +76,17 @@
                 android:text="@string/plot_synopsis"
                 android:textSize="16sp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Trailer" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show reviews" />
     </ScrollView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play Trailer" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show reviews" />
 </LinearLayout>

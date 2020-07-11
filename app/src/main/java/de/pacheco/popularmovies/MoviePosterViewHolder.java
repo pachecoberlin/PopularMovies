@@ -26,7 +26,7 @@ public class MoviePosterViewHolder extends RecyclerView.ViewHolder implements Vi
 
     public void setMovie(Movie movie) {
         this.movie = movie;
-        Picasso.get().load(movie.getFullPosterPath()).into(imageView);
+        Picasso.get().load(movie.getFullPosterPath()).placeholder(R.drawable.ic_tmdb_logo).into(imageView);
     }
 
     @Override

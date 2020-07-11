@@ -49,7 +49,7 @@ public class MoviesUtil {
         if (maxPage < 0) {
             return;
         }
-        maxPage = 0;
+        maxPage = 10;
         int pageCounter = 2;
         while (pageCounter <= maxPage) {
             String response = getMoviesAsJson(String.valueOf(pageCounter++), criteria);
@@ -113,10 +113,10 @@ public class MoviesUtil {
         for (int i = 0; i < results.length(); i++) {
             String movieAsJson = results.get(i).toString();
             Movie movie = gson.fromJson(movieAsJson, Movie.class);
-            if (movie.posterPath == null) {
-                Log.d(TAG, "Movie without poster ignored: " + movie.title);
-                continue;
-            }
+//            if (movie.posterPath == null) {
+//                Log.d(TAG, "Movie without poster ignored: " + movie.title);
+//                continue;
+//            }
             movie.setFullPosterPath(BASE_POSTER_URL + DEFAULT_SIZE + movie.posterPath);
             movies.add(movie);
         }
