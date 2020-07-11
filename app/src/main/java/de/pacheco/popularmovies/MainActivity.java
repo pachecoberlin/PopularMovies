@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import de.pacheco.popularmovies.databinding.ActivityMainBinding;
@@ -79,18 +79,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sortBy(final int itemId) {
-        Collections.sort(movies, new Comparator<Movie>() {
-            @Override
-            public int compare(Movie movie1, Movie movie2) {
-                switch (itemId) {
-                    case R.id.sort_by_popularity:
-                        return Float.compare(movie1.popularity, movie2.popularity);
-                    case R.id.sort_by_rating:
-                        return Float.compare(movie1.rating, movie2.rating);
-                }
-                Log.d(TAG, "Not supported operation id: " + itemId);
-                return 0;
+        Collections.sort(movies, (movie1, movie2) -> {
+            switch (itemId) {
+                case R.id.sort_by_popularity:
+                    return Float.compare(movie1.popularity, movie2.popularity);
+                case R.id.sort_by_rating:
+                    return Float.compare(movie1.rating, movie2.rating);
             }
+            Log.d(TAG, "Not supported operation id: " + itemId);
+            return 0;
         });
     }
 
@@ -108,9 +105,14 @@ public class MainActivity extends AppCompatActivity {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                if (i==0){
+                    LiveData<List<Movie>> liveData = movieDB.moviesDAO().loadMovies();
+                    liveData.observe(MainActivity.this,
+                            list->moviePosterAdapter.setMovieData(list));
+                }else{
+                    new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }

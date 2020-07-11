@@ -1,5 +1,6 @@
 package de.pacheco.popularmovies.model;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -21,7 +22,11 @@ public interface MovieDAO {
     void deleteMovie(Movie movie);
 
     @Query("Select * FROM movies")
-    List<Movie> loadMovies();
-//    @Query("Select * FROM movies ORDER BY {category}")
-//    void loadMovies();
+    LiveData<List<Movie>> loadMovies();
+
+    @Query("Select * FROM movies ORDER BY :category")
+    List<Movie> loadMovies(String category);
+
+    @Query("Select * FROM movies WHERE id = :id")
+    Movie getMovie(String id);
 }
