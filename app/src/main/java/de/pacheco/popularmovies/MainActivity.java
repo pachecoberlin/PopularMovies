@@ -20,6 +20,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import de.pacheco.popularmovies.databinding.ActivityMainBinding;
 import de.pacheco.popularmovies.model.Movie;
 import de.pacheco.popularmovies.util.MoviesUtil;
 
@@ -36,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        progressBar = findViewById(R.id.pb_loading_indicator);
-        networkErrorMessage = findViewById(R.id.tv_error_message_display);
-        contents = findViewById(R.id.contents);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        progressBar = binding.pbLoadingIndicator;
+        networkErrorMessage = binding.tvErrorMessageDisplay;
+        contents = binding.contents;
         Spinner spinner = findViewById(R.id.spinner_sortBy);
         spinner.setOnItemSelectedListener(getSpinnerListener());
         RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);

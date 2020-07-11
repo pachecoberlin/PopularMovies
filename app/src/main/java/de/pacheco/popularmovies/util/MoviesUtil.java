@@ -49,7 +49,7 @@ public class MoviesUtil {
         if (maxPage < 0) {
             return;
         }
-//        int maxPage = 10;
+        maxPage = 10;
         int pageCounter = 2;
         while (pageCounter <= maxPage) {
             String response = getMoviesAsJson(String.valueOf(pageCounter++), criteria);
