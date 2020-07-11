@@ -1,0 +1,1434 @@
+07-11 11:55:30.720 24345-24345/de.pacheco.popularmovies I/art: Late-enabling -Xcheck:jni
+07-11 11:55:30.769 24345-24345/de.pacheco.popularmovies W/System: ClassLoader referenced unknown path: /data/app/de.pacheco.popularmovies-2/lib/arm
+07-11 11:55:30.801 24345-24345/de.pacheco.popularmovies W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+07-11 11:55:30.826 24345-24345/de.pacheco.popularmovies D/PhoneWindowEx: [PWEx][generateLayout] setLGNavigationBarColor : colors=0xff000000
+07-11 11:55:30.826 24345-24345/de.pacheco.popularmovies I/PhoneWindow: [setLGNavigationBarColor] color=0x ff000000
+07-11 11:55:30.838 24345-24345/de.pacheco.popularmovies I/art: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>
+07-11 11:55:30.838 24345-24345/de.pacheco.popularmovies I/art: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>
+07-11 11:55:30.915 24345-24345/de.pacheco.popularmovies W/art: Before Android 4.1, method int androidx.appcompat.widget.DropDownListView.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+07-11 11:55:30.925 24345-24345/de.pacheco.popularmovies I/ListPopupWindow: Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.
+07-11 11:55:30.971 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c
+07-11 11:55:30.980 24345-24361/de.pacheco.popularmovies D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: false
+07-11 11:55:30.984 24345-24345/de.pacheco.popularmovies D/PhoneWindow: notifyNavigationBarColor, color=0x: ff000000, token: android.view.ViewRootImplAO$WEx@75c71d1
+07-11 11:55:31.012 24345-24361/de.pacheco.popularmovies E/GED: Failed to get GED Log Buf, err(0)
+07-11 11:55:31.012 24345-24361/de.pacheco.popularmovies I/OpenGLRenderer: Initialized EGL, version 1.4
+07-11 11:55:31.017 24345-24361/de.pacheco.popularmovies D/mali_winsys: new_window_surface returns 0x3000
+07-11 11:55:31.224 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.225 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c
+07-11 11:55:31.252 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=2
+07-11 11:55:31.290 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.291 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=3
+07-11 11:55:31.305 24345-24345/de.pacheco.popularmovies I/Timeline: Timeline: Activity_idle id: android.os.BinderProxy@55a79b9 time:26744010
+07-11 11:55:31.334 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.334 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=4
+07-11 11:55:31.370 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.370 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=5
+07-11 11:55:31.414 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.414 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=6
+07-11 11:55:31.459 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.459 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=7
+07-11 11:55:31.490 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Superintelligence
+07-11 11:55:31.493 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:31.493 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=8
+07-11 11:55:31.525 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.526 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=9
+07-11 11:55:31.562 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.562 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=10
+07-11 11:55:31.594 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.594 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=11
+07-11 11:55:31.637 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.638 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=12
+07-11 11:55:31.682 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Last Words
+07-11 11:55:31.691 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:31.691 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=13
+07-11 11:55:31.753 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.753 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=14
+07-11 11:55:31.807 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.807 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=15
+07-11 11:55:31.845 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.845 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=16
+07-11 11:55:31.893 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.893 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=17
+07-11 11:55:31.924 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:31.924 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=18
+07-11 11:55:31.973 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Anita
+07-11 11:55:31.975 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:31.975 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=19
+07-11 11:55:32.010 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.010 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=20
+07-11 11:55:32.046 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.046 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=21
+07-11 11:55:32.111 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.111 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=22
+07-11 11:55:32.153 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.154 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=23
+07-11 11:55:32.191 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.191 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=24
+07-11 11:55:32.230 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.230 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=25
+07-11 11:55:32.288 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.288 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=26
+07-11 11:55:32.318 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Chemical Hearts
+07-11 11:55:32.320 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:32.320 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=27
+07-11 11:55:32.363 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.363 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=28
+07-11 11:55:32.394 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.394 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=29
+07-11 11:55:32.425 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Untitled Universal Event Film (Nov 2020)
+07-11 11:55:32.431 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:32.431 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=30
+07-11 11:55:32.459 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Mangrove
+07-11 11:55:32.467 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:32.468 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=31
+07-11 11:55:32.508 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.509 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=32
+07-11 11:55:32.547 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.547 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=33
+07-11 11:55:32.598 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.598 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=34
+07-11 11:55:32.642 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.643 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=35
+07-11 11:55:32.691 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.691 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=36
+07-11 11:55:32.724 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Blue And Curt
+07-11 11:55:32.727 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:32.727 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=37
+07-11 11:55:32.792 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.792 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=38
+07-11 11:55:32.841 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.841 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=39
+07-11 11:55:32.892 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.892 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=40
+07-11 11:55:32.923 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Waves (2020)
+07-11 11:55:32.925 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:32.925 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=41
+07-11 11:55:32.936 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+07-11 11:55:32.957 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.957 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=42
+07-11 11:55:32.991 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:32.991 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=43
+07-11 11:55:33.045 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: The Creature
+07-11 11:55:33.062 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:33.062 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=44
+07-11 11:55:33.100 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Possessed
+07-11 11:55:33.110 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Grandpa Was An Emperor
+07-11 11:55:33.112 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 18
+07-11 11:55:33.112 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=45
+07-11 11:55:33.149 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.149 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=46
+07-11 11:55:33.187 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.187 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=47
+07-11 11:55:33.247 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.248 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=48
+07-11 11:55:33.286 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.286 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=49
+07-11 11:55:33.320 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: The Duke
+07-11 11:55:33.329 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:33.329 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=50
+07-11 11:55:33.363 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+07-11 11:55:33.376 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: X-Men: Production Scrapbook
+07-11 11:55:33.382 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:33.382 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=51
+07-11 11:55:33.409 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: There is an Alien Here
+07-11 11:55:33.411 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Go Back
+07-11 11:55:33.416 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 18
+07-11 11:55:33.416 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=52
+07-11 11:55:33.451 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.451 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=53
+07-11 11:55:33.486 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.486 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=54
+07-11 11:55:33.548 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.549 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=55
+07-11 11:55:33.635 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.635 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=56
+07-11 11:55:33.673 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.673 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=57
+07-11 11:55:33.734 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.734 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=58
+07-11 11:55:33.807 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: 너의 시선이 머무는 곳에
+07-11 11:55:33.818 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:33.818 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=59
+07-11 11:55:33.858 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.858 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=60
+07-11 11:55:33.896 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.896 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=61
+07-11 11:55:33.934 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.934 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=62
+07-11 11:55:33.980 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:33.980 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=63
+07-11 11:55:34.036 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.036 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=64
+07-11 11:55:34.086 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.086 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=65
+07-11 11:55:34.127 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.127 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=66
+07-11 11:55:34.167 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.168 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=67
+07-11 11:55:34.207 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.207 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=68
+07-11 11:55:34.239 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Hunger
+07-11 11:55:34.239 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:34.240 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=69
+07-11 11:55:34.288 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.289 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=70
+07-11 11:55:34.331 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.331 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=71
+07-11 11:55:34.381 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.381 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=72
+07-11 11:55:34.419 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.419 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=73
+07-11 11:55:34.449 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.449 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=74
+07-11 11:55:34.482 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.482 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=75
+07-11 11:55:34.544 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.544 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=76
+07-11 11:55:34.598 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.598 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=77
+07-11 11:55:34.628 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.628 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=78
+07-11 11:55:34.664 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.664 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=79
+07-11 11:55:34.678 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+07-11 11:55:34.700 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.700 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=80
+07-11 11:55:34.739 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.740 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=81
+07-11 11:55:34.806 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.806 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=82
+07-11 11:55:34.900 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+07-11 11:55:34.903 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.903 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=83
+07-11 11:55:34.946 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.946 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=84
+07-11 11:55:34.982 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:34.982 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=85
+07-11 11:55:35.027 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.028 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=86
+07-11 11:55:35.083 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.084 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=87
+07-11 11:55:35.136 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.136 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=88
+07-11 11:55:35.183 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.183 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=89
+07-11 11:55:35.234 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.234 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=90
+07-11 11:55:35.271 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.271 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=91
+07-11 11:55:35.339 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.339 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=92
+07-11 11:55:35.382 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.382 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=93
+07-11 11:55:35.422 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.422 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=94
+07-11 11:55:35.460 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.460 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=95
+07-11 11:55:35.506 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.506 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=96
+07-11 11:55:35.576 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.576 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=97
+07-11 11:55:35.620 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.621 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=98
+07-11 11:55:35.666 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.667 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=99
+07-11 11:55:35.722 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.722 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=100
+07-11 11:55:35.775 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.775 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=101
+07-11 11:55:35.815 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.815 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=102
+07-11 11:55:35.880 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.881 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=103
+07-11 11:55:35.930 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:35.930 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=104
+07-11 11:55:36.002 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.002 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=105
+07-11 11:55:36.073 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.074 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=106
+07-11 11:55:36.129 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.129 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=107
+07-11 11:55:36.182 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.182 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=108
+07-11 11:55:36.243 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.244 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=109
+07-11 11:55:36.245 24345-24345/de.pacheco.popularmovies I/Choreographer: Skipped 63 frames!  The application may be doing too much work on its main thread.
+07-11 11:55:36.295 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.295 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=110
+07-11 11:55:36.345 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.345 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=111
+07-11 11:55:36.376 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Untitled WB Event Film #2
+07-11 11:55:36.383 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:36.383 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=112
+07-11 11:55:36.434 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.434 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=113
+07-11 11:55:36.493 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.494 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=114
+07-11 11:55:36.567 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.567 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=115
+07-11 11:55:36.610 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.610 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=116
+07-11 11:55:36.652 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.652 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=117
+07-11 11:55:36.689 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.689 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=118
+07-11 11:55:36.736 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.737 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=119
+07-11 11:55:36.788 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.788 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=120
+07-11 11:55:36.841 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.841 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=121
+07-11 11:55:36.883 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.883 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=122
+07-11 11:55:36.925 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:36.926 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=123
+07-11 11:55:37.178 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.178 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=124
+07-11 11:55:37.237 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.238 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=125
+07-11 11:55:37.275 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.275 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=126
+07-11 11:55:37.311 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.311 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=127
+07-11 11:55:37.360 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.361 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=128
+07-11 11:55:37.397 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.397 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=129
+07-11 11:55:37.673 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.673 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=130
+07-11 11:55:37.707 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.707 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=131
+07-11 11:55:37.741 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.741 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=132
+07-11 11:55:37.782 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.782 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=133
+07-11 11:55:37.818 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.818 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=134
+07-11 11:55:37.854 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.854 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=135
+07-11 11:55:37.889 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.889 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=136
+07-11 11:55:37.922 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.922 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=137
+07-11 11:55:37.951 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:37.951 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=138
+07-11 11:55:38.005 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.006 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=139
+07-11 11:55:38.040 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.040 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=140
+07-11 11:55:38.073 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.073 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=141
+07-11 11:55:38.120 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.120 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=142
+07-11 11:55:38.161 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.161 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=143
+07-11 11:55:38.201 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.201 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=144
+07-11 11:55:38.241 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.242 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=145
+07-11 11:55:38.302 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.302 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=146
+07-11 11:55:38.342 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.343 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=147
+07-11 11:55:38.458 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.458 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=148
+07-11 11:55:38.494 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.495 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=149
+07-11 11:55:38.539 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.539 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=150
+07-11 11:55:38.570 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.570 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=151
+07-11 11:55:38.610 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.611 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=152
+07-11 11:55:38.662 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.662 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=153
+07-11 11:55:38.691 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.692 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=154
+07-11 11:55:38.736 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.736 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=155
+07-11 11:55:38.766 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.766 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=156
+07-11 11:55:38.822 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.823 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=157
+07-11 11:55:38.855 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.855 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=158
+07-11 11:55:38.886 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.887 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=159
+07-11 11:55:38.944 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.944 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=160
+07-11 11:55:38.976 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:38.976 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=161
+07-11 11:55:39.014 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.014 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=162
+07-11 11:55:39.067 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.067 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=163
+07-11 11:55:39.145 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.145 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=164
+07-11 11:55:39.175 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.176 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=165
+07-11 11:55:39.214 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.214 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=166
+07-11 11:55:39.254 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.255 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=167
+07-11 11:55:39.310 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.310 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=168
+07-11 11:55:39.382 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.383 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=169
+07-11 11:55:39.436 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.436 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=170
+07-11 11:55:39.474 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.475 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=171
+07-11 11:55:39.514 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.514 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=172
+07-11 11:55:39.559 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.560 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=173
+07-11 11:55:39.607 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.607 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=174
+07-11 11:55:39.645 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.646 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=175
+07-11 11:55:39.693 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.693 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=176
+07-11 11:55:39.731 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.731 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=177
+07-11 11:55:39.771 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.771 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=178
+07-11 11:55:39.815 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Super Nova
+07-11 11:55:39.817 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:39.817 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=179
+07-11 11:55:39.866 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:39.866 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=180
+07-11 11:55:40.107 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:40.107 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=181
+07-11 11:55:40.313 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:40.313 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=182
+07-11 11:55:40.514 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:40.514 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=183
+07-11 11:55:40.714 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:40.715 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=184
+07-11 11:55:40.862 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+07-11 11:55:40.927 24345-24345/de.pacheco.popularmovies I/ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+07-11 11:55:40.943 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:40.943 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=185
+07-11 11:55:41.181 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:41.182 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=186
+07-11 11:55:41.389 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:41.390 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=187
+07-11 11:55:41.593 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:41.593 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=188
+07-11 11:55:41.792 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Festival
+07-11 11:55:41.794 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:41.794 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=189
+07-11 11:55:42.012 24345-24359/de.pacheco.popularmovies D/MoviesUtil: Movie without poster ignored: Fatherhood
+07-11 11:55:42.019 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 19
+07-11 11:55:42.019 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=190
+07-11 11:55:42.223 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:42.224 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=191
+07-11 11:55:42.425 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Movie list size 20
+07-11 11:55:42.425 24345-24359/de.pacheco.popularmovies V/MoviesUtil: Built URI https://api.themoviedb.org/3/movie/popular?api_key=8673177ce6acc598e038df55449f7e1c&page=192
+07-11 11:55:42.496 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.497 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.497 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.498 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.498 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.509 24345-24355/de.pacheco.popularmovies I/art: Clamp target GC heap from 141MB to 128MB
+07-11 11:55:42.509 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 12.329ms for cause Alloc
+07-11 11:55:42.509 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.509 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 11.669ms for cause Alloc
+07-11 11:55:42.509 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.509 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 11.371ms for cause Alloc
+07-11 11:55:42.509 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.510 24345-24376/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 10.835ms for cause Alloc
+07-11 11:55:42.510 24345-24376/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.510 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 13.757ms for cause Alloc
+07-11 11:55:42.510 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.532 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.532 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.537 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.541 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 9.400ms for cause Alloc
+07-11 11:55:42.541 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.541 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 9.483ms for cause Alloc
+07-11 11:55:42.541 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.541 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.545 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.545 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.546 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.554 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.589 24345-24355/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.589 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 43.656ms for cause Alloc
+07-11 11:55:42.589 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.589 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 43.629ms for cause Alloc
+07-11 11:55:42.589 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.589 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 42.912ms for cause Alloc
+07-11 11:55:42.589 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.589 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 35.700ms for cause Alloc
+07-11 11:55:42.589 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.592 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.592 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.592 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.592 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.593 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.593 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.600 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.603 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 810(49KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.120ms total 10.313ms
+07-11 11:55:42.603 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 10.557ms for cause Background
+07-11 11:55:42.603 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 10.613ms for cause Alloc
+07-11 11:55:42.603 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.603 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 10.428ms for cause Alloc
+07-11 11:55:42.603 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.603 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 9.617ms for cause Alloc
+07-11 11:55:42.603 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.605 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.605 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.605 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.605 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.605 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.605 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.606 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.661 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.661 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 555(74KB) AllocSpace objects, 4(80KB) LOS objects, 0% free, 127MB/128MB, paused 1.047ms total 56.381ms
+07-11 11:55:42.662 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 56.675ms for cause Alloc
+07-11 11:55:42.662 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.662 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.662 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.662 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.662 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.662 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.671 24345-24379/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 102(2864B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.128ms total 9.483ms
+07-11 11:55:42.671 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.671 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.672 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.672 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.672 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.707 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.722 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.722 24345-24379/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 730(44KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.088ms total 50.173ms
+07-11 11:55:42.722 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.722 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.722 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.722 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.722 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.722 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.775 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.775 24345-24379/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 72(15KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.020ms total 52.653ms
+07-11 11:55:42.775 24345-24379/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 200KB allocation
+07-11 11:55:42.775 24345-24376/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 181.403ms for cause Alloc
+07-11 11:55:42.775 24345-24376/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.775 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 168.829ms for cause Alloc
+07-11 11:55:42.775 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.775 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.775 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.775 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.775 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.776 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.784 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 816us total 8.374ms
+07-11 11:55:42.784 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.784 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.784 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.784 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.784 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.830 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.830 24345-24380/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 21(12KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 985us total 46.156ms
+07-11 11:55:42.830 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.834 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.835 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.835 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.835 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.882 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.883 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 5(128B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 984us total 52.182ms
+07-11 11:55:42.883 24345-24380/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 200KB allocation
+07-11 11:55:42.883 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 282.488ms for cause Alloc
+07-11 11:55:42.883 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.883 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 107.623ms for cause Alloc
+07-11 11:55:42.883 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.883 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.883 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.883 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.884 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.936 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.936 24345-24379/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 112(13KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 967us total 52.610ms
+07-11 11:55:42.936 24345-24379/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 205732 byte allocation with 16816 free bytes and 16KB until OOM"
+07-11 11:55:42.936 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.936 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.936 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.936 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.936 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.936 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.944 24345-24379/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 3(352B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 754us total 7.743ms
+07-11 11:55:42.944 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.944 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.944 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.944 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.945 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.991 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:42.991 24345-24379/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 11(544B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 980us total 46.516ms
+07-11 11:55:42.991 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:42.991 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.991 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.991 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:42.991 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.043 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.043 24345-24379/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 980us total 52.005ms
+07-11 11:55:43.043 24345-24379/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 200KB allocation
+07-11 11:55:43.043 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.043 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.043 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.043 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.043 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.095 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.096 24345-24379/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 993us total 52.235ms
+07-11 11:55:43.096 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 490.481ms for cause Background
+07-11 11:55:43.096 24345-24379/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 205732 byte allocation with 20512 free bytes and 20KB until OOM"
+07-11 11:55:43.096 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 388.700ms for cause Alloc
+07-11 11:55:43.096 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.096 24345-24379/de.pacheco.popularmovies D/skia: --- decoder->decode returned false
+07-11 11:55:43.096 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.096 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.097 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.099 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.099 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.100 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.105 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 221.707ms for cause Alloc
+07-11 11:55:43.105 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.105 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.105 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.105 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.105 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.105 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.162 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.162 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 28(12KB) AllocSpace objects, 1(20KB) LOS objects, 0% free, 127MB/128MB, paused 1.097ms total 57.112ms
+07-11 11:55:43.162 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 278.371ms for cause Alloc
+07-11 11:55:43.162 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.163 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.163 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.163 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.163 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.163 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.163 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.163 24345-24380/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 205732 byte allocation with 1456 free bytes and 1456B until OOM"
+07-11 11:55:43.163 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.172 24345-24359/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 5(16KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 883us total 8.564ms
+07-11 11:55:43.172 24345-24376/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 72.840ms for cause Alloc
+07-11 11:55:43.172 24345-24376/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.172 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 71.268ms for cause Alloc
+07-11 11:55:43.172 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.172 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 66.547ms for cause Background
+07-11 11:55:43.172 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 73.261ms for cause Alloc
+07-11 11:55:43.172 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.172 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.172 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.172 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.172 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.172 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.227 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.228 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 23(20KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.021ms total 55.249ms
+07-11 11:55:43.228 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.229 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.231 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.231 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.231 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.237 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 64.573ms for cause Alloc
+07-11 11:55:43.237 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.237 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 631.950ms for cause Alloc
+07-11 11:55:43.237 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.237 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 5.672ms for cause Alloc
+07-11 11:55:43.237 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.237 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.237 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.237 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.237 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.237 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.287 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.287 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 16(8KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.033ms total 49.485ms
+07-11 11:55:43.287 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 123.545ms for cause Alloc
+07-11 11:55:43.287 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.287 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.287 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.288 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.290 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.290 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.290 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.297 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 38(1296B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 903us total 9.169ms
+07-11 11:55:43.297 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.297 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.297 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.297 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.297 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.351 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.351 24345-24380/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 13(448B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.024ms total 53.821ms
+07-11 11:55:43.351 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.351 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.351 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.351 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.351 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.404 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.404 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 5(192B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 928us total 52.756ms
+07-11 11:55:43.404 24345-24380/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 200KB allocation
+07-11 11:55:43.404 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 114.216ms for cause Alloc
+07-11 11:55:43.404 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.404 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 167.145ms for cause Alloc
+07-11 11:55:43.404 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.405 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 167.410ms for cause Alloc
+07-11 11:55:43.405 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.405 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.405 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.405 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.405 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.405 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.413 24345-24379/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 29(704B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 739us total 7.689ms
+07-11 11:55:43.413 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 240.493ms for cause Alloc
+07-11 11:55:43.413 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.413 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.413 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.413 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.413 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.424 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.472 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.472 24345-24359/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 53(3KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 960us total 59.255ms
+07-11 11:55:43.472 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.472 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.472 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.473 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.473 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.480 24345-24359/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 797us total 7.526ms
+07-11 11:55:43.480 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.480 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.480 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.480 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.480 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.532 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.532 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 7(240B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 974us total 52.114ms
+07-11 11:55:43.532 24345-24359/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 16KB allocation
+07-11 11:55:43.532 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 127.629ms for cause Alloc
+07-11 11:55:43.532 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.533 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 119.304ms for cause Alloc
+07-11 11:55:43.533 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.533 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.533 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.533 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.533 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.533 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.533 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.541 24345-24379/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 16(592B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 722us total 7.633ms
+07-11 11:55:43.541 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 7.799ms for cause Alloc
+07-11 11:55:43.541 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.541 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.541 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.541 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.541 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.541 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.541 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.592 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.592 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 21(3KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.021ms total 50.871ms
+07-11 11:55:43.592 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 354.924ms for cause Background
+07-11 11:55:43.592 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 187.365ms for cause Alloc
+07-11 11:55:43.592 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.592 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.593 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.593 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.594 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.648 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.648 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.648 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.032ms total 55.712ms
+07-11 11:55:43.648 24345-24380/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 205732 byte allocation with 3824 free bytes and 3KB until OOM"
+07-11 11:55:43.648 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 243.320ms for cause Alloc
+07-11 11:55:43.648 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.648 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.649 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.649 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.649 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.649 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.649 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.657 24345-24378/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 913us total 8.289ms
+07-11 11:55:43.657 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 62.680ms for cause Alloc
+07-11 11:55:43.657 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.657 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.657 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.657 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.657 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.657 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.657 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.657 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.710 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.710 24345-24378/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 3(160B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.027ms total 52.536ms
+07-11 11:55:43.710 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 60.932ms for cause Alloc
+07-11 11:55:43.710 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.710 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 52.808ms for cause Background
+07-11 11:55:43.710 24345-24380/de.pacheco.popularmovies D/skia: --- decoder->decode returned false
+07-11 11:55:43.710 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.710 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.710 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.710 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.710 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.711 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.715 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.719 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 947us total 8.571ms
+07-11 11:55:43.719 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 70.999ms for cause Alloc
+07-11 11:55:43.719 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.719 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 61.922ms for cause Alloc
+07-11 11:55:43.719 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.719 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.719 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.719 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.719 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.720 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.720 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.741 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.773 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.773 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 20(12KB) AllocSpace objects, 1(20KB) LOS objects, 0% free, 127MB/128MB, paused 1.049ms total 53.325ms
+07-11 11:55:43.773 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 62.545ms for cause Alloc
+07-11 11:55:43.773 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.773 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.773 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.774 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.774 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.774 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.783 24345-24378/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 118(3KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.053ms total 9.540ms
+07-11 11:55:43.783 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 63.626ms for cause Alloc
+07-11 11:55:43.783 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.783 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.783 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 63.932ms for cause Background
+07-11 11:55:43.783 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 250.233ms for cause Alloc
+07-11 11:55:43.784 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.784 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.784 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.784 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.784 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.786 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.840 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:43.840 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 46(3KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 1.331ms total 56.425ms
+07-11 11:55:43.840 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 56.624ms for cause Alloc
+07-11 11:55:43.840 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.840 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.841 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.841 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.841 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.841 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.841 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.848 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.848 24345-24345/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 773us total 7.431ms
+07-11 11:55:43.848 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.848 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.848 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.848 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.849 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.849 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.849 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.895 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:43.895 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 9(384B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 981us total 46.986ms
+07-11 11:55:43.896 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.896 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.896 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.898 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.898 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.898 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.898 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.949 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:43.949 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 1.002ms total 52.995ms
+07-11 11:55:43.949 24345-24345/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 36B allocation
+07-11 11:55:43.949 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 229.383ms for cause Alloc
+07-11 11:55:43.949 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.949 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.949 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.950 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.950 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.950 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.950 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.950 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.957 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 941us total 8.183ms
+07-11 11:55:43.957 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:43.957 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.958 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.958 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.958 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.958 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:43.958 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.008 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.009 24345-24380/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 1.107ms total 51.062ms
+07-11 11:55:44.009 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.009 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.009 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.009 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.009 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.009 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.009 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.063 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.063 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 1.002ms total 53.930ms
+07-11 11:55:44.063 24345-24380/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 44B allocation
+07-11 11:55:44.063 24345-24379/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 522.030ms for cause Alloc
+07-11 11:55:44.063 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.063 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.063 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.063 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.063 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.064 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.065 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.065 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24379/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 753us total 7.825ms
+07-11 11:55:44.071 24345-24355/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 230.278ms for cause Background
+07-11 11:55:44.071 24345-24379/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.071 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.071 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.121 24345-24379/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.121 24345-24379/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 1.014ms total 49.967ms
+07-11 11:55:44.121 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 273.297ms for cause Alloc
+07-11 11:55:44.121 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.121 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.122 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.122 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.122 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.122 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.122 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.123 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.129 24345-24353/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 826us total 7.810ms
+07-11 11:55:44.130 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.130 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.130 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.130 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.130 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.130 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.130 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.177 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.177 24345-24353/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 986us total 47.011ms
+07-11 11:55:44.177 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.177 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.177 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.177 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.177 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.177 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.179 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.229 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.229 24345-24353/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 980us total 52.350ms
+07-11 11:55:44.229 24345-24353/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 24B allocation
+07-11 11:55:44.229 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 164.862ms for cause Alloc
+07-11 11:55:44.229 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.230 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.230 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.230 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.230 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.230 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.230 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.283 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.283 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 984us total 53ms
+07-11 11:55:44.283 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC HomogeneousSpaceCompact
+07-11 11:55:44.283 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.284 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.284 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.284 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.284 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.284 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.394 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.394 24345-24380/de.pacheco.popularmovies I/art: HomogeneousSpaceCompact marksweep + semispace GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 110.978ms total 110.978ms
+07-11 11:55:44.394 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 444.310ms for cause Alloc
+07-11 11:55:44.394 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.405 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.406 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.408 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.408 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.408 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.415 24345-24380/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 44 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:44.415 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.444 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.444 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 772us total 49.908ms
+07-11 11:55:44.444 24345-24345/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 36 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:44.445 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 603.545ms for cause Alloc
+07-11 11:55:44.445 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.445 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.445 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.445 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.445 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.445 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.445 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.445 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24359/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 790us total 7.179ms
+07-11 11:55:44.452 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.452 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.452 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.499 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.499 24345-24359/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 859us total 47.034ms
+07-11 11:55:44.499 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.499 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.499 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.500 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.500 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.500 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.500 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.547 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.547 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 782us total 47.310ms
+07-11 11:55:44.547 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 101.774ms for cause Alloc
+07-11 11:55:44.547 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.547 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.547 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.547 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.547 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.547 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.547 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.548 24345-24359/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 45B allocation
+07-11 11:55:44.548 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24345/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 649us total 6.744ms
+07-11 11:55:44.554 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.554 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.554 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.596 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.597 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 984us total 42.352ms
+07-11 11:55:44.597 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 366.660ms for cause Alloc
+07-11 11:55:44.597 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.597 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.597 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.597 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.597 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.597 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.605 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.644 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.644 24345-24353/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 819us total 47.072ms
+07-11 11:55:44.644 24345-24353/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 24 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:44.644 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 229.262ms for cause Alloc
+07-11 11:55:44.644 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.644 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.644 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.644 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.644 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.645 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.645 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.645 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.651 24345-24380/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 683us total 7.008ms
+07-11 11:55:44.651 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.651 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.652 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.652 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.652 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.652 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.652 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.696 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.696 24345-24380/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 914us total 44.749ms
+07-11 11:55:44.696 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 91.936ms for cause Alloc
+07-11 11:55:44.696 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.697 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.697 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.697 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.697 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.697 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.697 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.743 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.743 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 769us total 46.148ms
+07-11 11:55:44.743 24345-24345/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:44.743 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 98.290ms for cause Alloc
+07-11 11:55:44.743 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.743 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.743 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.744 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.744 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.744 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.744 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.744 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24353/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 653us total 6.810ms
+07-11 11:55:44.750 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.750 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.750 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.795 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.795 24345-24353/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 834us total 44.929ms
+07-11 11:55:44.795 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.795 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.795 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.796 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.796 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.796 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.796 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.843 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.844 24345-24353/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 815us total 47.595ms
+07-11 11:55:44.844 24345-24353/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:44.844 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 99.946ms for cause Alloc
+07-11 11:55:44.844 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.844 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.844 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.844 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.844 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.844 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.844 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.895 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.895 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 835us total 50.856ms
+07-11 11:55:44.895 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 1.109s for cause Alloc
+07-11 11:55:44.895 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.896 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.896 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.896 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.896 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.896 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.896 24345-24345/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 28 byte allocation with 0 free bytes and 3GB until OOM" (recursive case)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art: "main" prio=5 tid=1 Runnable
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:   | group="main" sCount=0 dsCount=0 obj=0x75dbdfb0 self=0xb7ff2018
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:   | sysTid=24345 nice=0 cgrp=default sched=0/0 handle=0xb6f65de4
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:   | state=R schedstat=( 0 0 0 ) utm=372 stm=26 core=0 HZ=100
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:   | stack=0xbe316000-0xbe318000 stackSize=8MB
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:   | held mutexes= "mutator lock"(shared held)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at java.lang.ref.FinalizerReference.add(FinalizerReference.java:54)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.RenderNode.create(RenderNode.java:196)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.View.<init>(View.java:3811)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.View.<init>(View.java:3911)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.widget.ImageView.<init>(ImageView.java:145)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.widget.ImageView.<init>(ImageView.java:140)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.widget.AppCompatImageView.<init>(AppCompatImageView.java:72)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.widget.AppCompatImageView.<init>(AppCompatImageView.java:68)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.app.AppCompatViewInflater.createImageView(AppCompatViewInflater.java:187)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.app.AppCompatViewInflater.createView(AppCompatViewInflater.java:107)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.app.AppCompatDelegateImpl.createView(AppCompatDelegateImpl.java:1407)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.appcompat.app.AppCompatDelegateImpl.onCreateView(AppCompatDelegateImpl.java:1457)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:746)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:704)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.rInflate(LayoutInflater.java:835)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:798)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.inflate(LayoutInflater.java:515)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.MoviePosterAdapter.onCreateViewHolder(MoviePosterAdapter.java:28)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.MoviePosterAdapter.onCreateViewHolder(MoviePosterAdapter.java:16)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6235)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:6118)
+07-11 11:55:44.897 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:6114)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.LinearLayoutManager$LayoutState.next(LinearLayoutManager.java:2303)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.GridLayoutManager.layoutChunk(GridLayoutManager.java:561)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1587)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.LinearLayoutManager.scrollBy(LinearLayoutManager.java:1391)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.LinearLayoutManager.scrollVerticallyBy(LinearLayoutManager.java:1128)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.GridLayoutManager.scrollVerticallyBy(GridLayoutManager.java:386)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView.scrollStep(RecyclerView.java:1841)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at androidx.recyclerview.widget.RecyclerView$ViewFlinger.run(RecyclerView.java:5302)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:858)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.view.Choreographer.doFrame(Choreographer.java:603)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.os.Handler.handleCallback(Handler.java:739)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.os.Handler.dispatchMessage(Handler.java:95)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.os.Looper.loop(Looper.java:148)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at android.app.ActivityThread.main(ActivityThread.java:5585)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at java.lang.reflect.Method.invoke!(Native method)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:730)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies W/art:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:620)
+07-11 11:55:44.898 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.950 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:44.950 24345-24378/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 2(544B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 1.056ms total 55.066ms
+07-11 11:55:44.950 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.951 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.951 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.951 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.952 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.952 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.952 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.960 24345-24378/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 801us total 9.524ms
+07-11 11:55:44.960 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:44.960 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.960 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.960 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.960 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.960 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:44.961 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.005 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.005 24345-24378/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 3(144B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 614us total 44.750ms
+07-11 11:55:45.005 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 161.241ms for cause Alloc
+07-11 11:55:45.005 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.005 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.006 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.006 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.006 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.006 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.006 24345-24378/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:45.006 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.053 24345-24353/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.053 24345-24353/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 659us total 47.733ms
+07-11 11:55:45.053 24345-24353/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 28 byte allocation with 0 free bytes and 3GB until OOM" (recursive case)
+07-11 11:55:45.053 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 505.187ms for cause Alloc
+07-11 11:55:45.053 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.053 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.054 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.054 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.054 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.054 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art: "FinalizerDaemon" daemon prio=5 tid=6 Runnable
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:   | group="system" sCount=0 dsCount=0 obj=0x22c32220 self=0xb831d0f0
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:   | sysTid=24353 nice=0 cgrp=default sched=0/0 handle=0xb3bb0930
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:   | state=R schedstat=( 0 0 0 ) utm=42 stm=5 core=0 HZ=100
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:   | stack=0xb3aae000-0xb3ab0000 stackSize=1038KB
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:   | held mutexes= "mutator lock"(shared held)
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:     at com.android.internal.os.BinderInternal$GcWatcher.finalize(BinderInternal.java:53)
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:     at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:202)
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:     at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:185)
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies W/art:     at java.lang.Thread.run(Thread.java:818)
+07-11 11:55:45.055 24345-24353/de.pacheco.popularmovies E/System: Uncaught exception thrown by finalizer
+07-11 11:55:45.056 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.099 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.099 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 598us total 44.767ms
+07-11 11:55:45.099 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 200.868ms for cause Alloc
+07-11 11:55:45.099 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.099 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.099 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.099 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.099 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.099 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.100 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.100 24345-24359/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 45 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:45.101 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24345/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 556us total 6.446ms
+07-11 11:55:45.106 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.106 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.106 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.141 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.141 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 585us total 35.184ms
+07-11 11:55:45.141 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.141 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.141 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.141 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.141 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.144 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.144 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.183 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.183 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 586us total 41.467ms
+07-11 11:55:45.183 24345-24345/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 32B allocation
+07-11 11:55:45.183 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.183 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.183 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.184 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.184 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.185 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.185 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.224 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.224 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 594us total 41.033ms
+07-11 11:55:45.224 24345-24345/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 32 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:45.224 24345-24378/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 217.901ms for cause Alloc
+07-11 11:55:45.224 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.225 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.225 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.225 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.225 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.225 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.225 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.266 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.267 24345-24378/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 621us total 41.902ms
+07-11 11:55:45.267 24345-24378/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 28 byte allocation with 0 free bytes and 3GB until OOM"
+07-11 11:55:45.267 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.267 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.267 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.268 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.268 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.268 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.268 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.268 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24378/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 551us total 6.815ms
+07-11 11:55:45.274 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.274 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.274 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.312 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.313 24345-24378/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 646us total 38.616ms
+07-11 11:55:45.313 24345-24378/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.313 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.313 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.313 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.313 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.313 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.313 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.359 24345-24378/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.359 24345-24378/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 677us total 45.610ms
+07-11 11:55:45.359 24345-24378/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:45.359 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 133.926ms for cause Alloc
+07-11 11:55:45.359 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.359 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.359 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.359 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.359 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.359 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.360 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.360 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.366 24345-24345/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 687us total 7.213ms
+07-11 11:55:45.366 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.366 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.367 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.367 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.367 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.367 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.367 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.408 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.408 24345-24345/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 670us total 41.584ms
+07-11 11:55:45.408 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.410 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.411 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.411 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.411 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.411 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.411 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.455 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.455 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 668us total 46.385ms
+07-11 11:55:45.455 24345-24345/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:45.455 24345-24359/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 354.036ms for cause Alloc
+07-11 11:55:45.455 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.455 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.455 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.455 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.455 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.455 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.455 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.459 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.463 24345-24359/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 685us total 8.092ms
+07-11 11:55:45.463 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.463 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.464 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.464 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.464 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.464 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.464 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.508 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.508 24345-24359/de.pacheco.popularmovies I/art: Alloc partial concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 922us total 44.226ms
+07-11 11:55:45.508 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.508 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.508 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.509 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.509 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.509 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.509 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.561 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.561 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 647us total 52.828ms
+07-11 11:55:45.561 24345-24359/de.pacheco.popularmovies I/art: Forcing collection of SoftReferences for 28B allocation
+07-11 11:55:45.561 24345-24359/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.562 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.562 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.562 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.562 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.562 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.562 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.606 24345-24359/de.pacheco.popularmovies I/art: Clamp target GC heap from 144MB to 128MB
+07-11 11:55:45.606 24345-24359/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 128MB/128MB, paused 626us total 45.103ms
+07-11 11:55:45.607 24345-24359/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 28 byte allocation with 0 free bytes and 3GB until OOM" (recursive case)
+07-11 11:55:45.607 24345-24380/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 909.130ms for cause Alloc
+07-11 11:55:45.607 24345-24380/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.607 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.607 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.607 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.607 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.607 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art: "AsyncTask #1" prio=5 tid=10 Runnable
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:   | group="main" sCount=0 dsCount=0 obj=0x22c323a0 self=0xb8381b78
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:   | sysTid=24359 nice=10 cgrp=bg_non_interactive sched=0/0 handle=0x9d512930
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:   | state=R schedstat=( 0 0 0 ) utm=464 stm=41 core=1 HZ=100
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:   | stack=0x9d410000-0x9d412000 stackSize=1038KB
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:   | held mutexes= "mutator lock"(shared held)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.nio.CharBuffer.wrap(CharBuffer.java:91)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.expandBuffer(Scanner.java:2098)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.readMore(Scanner.java:2060)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.findDelimiterAfter(Scanner.java:2038)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.setTokenRegion(Scanner.java:1953)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.hasNext(Scanner.java:548)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.Scanner.hasNext(Scanner.java:526)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.util.NetworkUtils.getResponseFromHttpUrl(NetworkUtils.java:45)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.util.MoviesUtil.getMoviesAsJson(MoviesUtil.java:101)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.util.MoviesUtil.addAllMovies(MoviesUtil.java:55)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.MainActivity$FetchMoviesTask.doInBackground(MainActivity.java:126)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at de.pacheco.popularmovies.MainActivity$FetchMoviesTask.doInBackground(MainActivity.java:110)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at android.os.AsyncTask$2.call(AsyncTask.java:295)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+07-11 11:55:45.609 24345-24359/de.pacheco.popularmovies W/art:     at java.lang.Thread.run(Thread.java:818)
+07-11 11:55:45.610 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.652 24345-24380/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:45.652 24345-24380/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 9(24KB) AllocSpace objects, 1(20KB) LOS objects, 0% free, 127MB/128MB, paused 634us total 44.814ms
+07-11 11:55:45.652 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 196.372ms for cause Alloc
+07-11 11:55:45.652 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.652 24345-24376/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.652 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.652 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.652 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.652 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.656 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.694 24345-24345/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:45.694 24345-24345/de.pacheco.popularmovies I/art: Alloc concurrent mark sweep GC freed 67(3KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 659us total 41.786ms
+07-11 11:55:45.694 24345-24345/de.pacheco.popularmovies W/art: Throwing OutOfMemoryError "Failed to allocate a 28 byte allocation with 1360 free bytes and 1360B until OOM" (recursive case)
+07-11 11:55:45.694 24345-24376/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 1.952s for cause Alloc
+07-11 11:55:45.695 24345-24376/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.695 24345-24376/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.695 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.695 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.695 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.696 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.696 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art: "main" prio=5 tid=1 Runnable
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   | group="main" sCount=0 dsCount=0 obj=0x75dbdfb0 self=0xb7ff2018
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   | sysTid=24345 nice=0 cgrp=default sched=0/0 handle=0xb6f65de4
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   | state=R schedstat=( 0 0 0 ) utm=398 stm=26 core=1 HZ=100
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   | stack=0xbe316000-0xbe318000 stackSize=8MB
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   | held mutexes= "mutator lock"(shared held)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #00 pc 0035acef  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiPKcPNS_9ArtMethodEPv+126)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #01 pc 003372ff  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE+134)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #02 pc 0033da39  /system/lib/libart.so (_ZN3art6Thread21ThrowOutOfMemoryErrorEPKc+164)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #03 pc 001b06c7  /system/lib/libart.so (_ZN3art2gc4Heap21ThrowOutOfMemoryErrorEPNS_6ThreadEjNS0_13AllocatorTypeE+410)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #04 pc 001b64f1  /system/lib/libart.so (_ZN3art2gc4Heap22AllocateInternalWithGcEPNS_6ThreadENS0_13AllocatorTypeEjPjS5_S5_PPNS_6mirror5ClassE+4596)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #05 pc 00123b4f  /system/lib/libart.so (_ZN3art6mirror5Class11AllocObjectEPNS_6ThreadE+1362)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #06 pc 0033d287  /system/lib/libart.so (_ZN3art6Thread24ThrowNewWrappedExceptionEPKcS2_+470)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #07 pc 0033da7d  /system/lib/libart.so (_ZN3art6Thread21ThrowOutOfMemoryErrorEPKc+232)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #08 pc 001b06c7  /system/lib/libart.so (_ZN3art2gc4Heap21ThrowOutOfMemoryErrorEPNS_6ThreadEjNS0_13AllocatorTypeE+410)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #09 pc 001b64f1  /system/lib/libart.so (_ZN3art2gc4Heap22AllocateInternalWithGcEPNS_6ThreadENS0_13AllocatorTypeEjPjS5_S5_PPNS_6mirror5ClassE+4596)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #10 pc 00123b4f  /system/lib/libart.so (_ZN3art6mirror5Class11AllocObjectEPNS_6ThreadE+1362)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #11 pc 0028c7b3  /system/lib/libart.so (_ZN3art3JNI10NewObjectVEP7_JNIEnvP7_jclassP10_jmethodIDSt9__va_list+710)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #12 pc 00106e3f  /system/lib/libart.so (_ZN3art8CheckJNI10NewObjectVEP7_JNIEnvP7_jclassP10_jmethodIDSt9__va_list+866)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #13 pc 00262b07  /system/lib/libart.so (_ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz+18)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #14 pc 0031b17f  /system/lib/libart.so (_ZN3art12InvokeMethodERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectS4_S4_j+750)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #15 pc 002d2d4f  /system/lib/libart.so (_ZN3artL13Method_invokeEP7_JNIEnvP8_jobjectS3_S3_+22)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:   native: #16 pc 00254e69  /data/dalvik-cache/arm/system@framework@boot.oat (Java_java_lang_reflect_Method_invoke__Ljava_lang_Object_2_3Ljava_lang_Object_2+116)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:     at java.lang.reflect.Method.invoke!(Native method)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:730)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies W/art:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:620)
+07-11 11:55:45.756 24345-24345/de.pacheco.popularmovies D/AndroidRuntime: Shutting down VM
+07-11 11:55:45.757 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.763 24345-24376/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 691us total 68.515ms
+07-11 11:55:45.764 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.764 24345-24353/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.764 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.764 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.764 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.765 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.801 24345-24355/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:45.801 24345-24353/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 745.873ms for cause Alloc
+07-11 11:55:45.801 24345-24353/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.802 24345-24353/de.pacheco.popularmovies E/System: java.lang.OutOfMemoryError: OutOfMemoryError thrown while trying to throw OutOfMemoryError; no stack trace available
+07-11 11:55:45.802 24345-24345/de.pacheco.popularmovies I/art: WaitForGcToComplete blocked for 45.313ms for cause Alloc
+07-11 11:55:45.802 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.802 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.802 24345-24345/de.pacheco.popularmovies I/art: Starting a blocking GC Alloc
+07-11 11:55:45.804 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.805 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.805 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.805 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.810 24345-24345/de.pacheco.popularmovies I/art: Alloc sticky concurrent mark sweep GC freed 15(2032B) AllocSpace objects, 0(0B) LOS objects, 0% free, 127MB/128MB, paused 688us total 7.407ms
+07-11 11:55:45.810 24345-24359/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.810 24345-24378/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.810 24345-24379/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.810 24345-24345/de.pacheco.popularmovies E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: de.pacheco.popularmovies, PID: 24345
+    java.lang.OutOfMemoryError: OutOfMemoryError thrown while trying to throw OutOfMemoryError; no stack trace available
+07-11 11:55:45.810 24345-24345/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.810 24345-24380/de.pacheco.popularmovies I/art: Waiting for a blocking GC Alloc
+07-11 11:55:45.851 24345-24355/de.pacheco.popularmovies I/art: Clamp target GC heap from 143MB to 128MB
+07-11 11:55:45.852 24345-24359/? I/art: WaitForGcToComplete blocked for 241.696ms for cause Alloc
+07-11 11:55:45.852 24345-24359/? I/art: Starting a blocking GC Alloc
+07-11 11:55:45.853 24345-24359/? I/Process: Sending signal. PID: 24345 SIG: 9
