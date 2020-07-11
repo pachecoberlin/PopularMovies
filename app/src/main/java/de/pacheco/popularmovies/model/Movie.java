@@ -1,7 +1,11 @@
 package de.pacheco.popularmovies.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.google.gson.annotations.SerializedName;
 
+@Entity(tableName = "movies")
 public class Movie {
     @SerializedName("vote_average")
     public float rating;
@@ -12,6 +16,7 @@ public class Movie {
     @SerializedName("poster_path")
     public String posterPath;
 
+    @PrimaryKey
     @SerializedName("id")
     public int id;
 

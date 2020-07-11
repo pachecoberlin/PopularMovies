@@ -22,6 +22,7 @@ import java.util.List;
 
 import de.pacheco.popularmovies.databinding.ActivityMainBinding;
 import de.pacheco.popularmovies.model.Movie;
+import de.pacheco.popularmovies.model.MovieDB;
 import de.pacheco.popularmovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
     private View contents;
+    private MovieDB movieDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
+        movieDB  = MovieDB.getInstance(this);
     }
 
     @Override
