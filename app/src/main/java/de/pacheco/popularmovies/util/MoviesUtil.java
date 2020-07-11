@@ -18,6 +18,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+import de.pacheco.popularmovies.ApiKey;
 import de.pacheco.popularmovies.model.Movie;
 
 public class MoviesUtil {
@@ -31,7 +32,7 @@ public class MoviesUtil {
     /**
      * TODO Please provide your personal API key
      */
-    private static final String API_KEY_VALUE = "";
+    private static final String API_KEY_VALUE = ApiKey.API_KEY_VALUE;
     public static final String PAGE_PARAM = "page";
 
     /**
