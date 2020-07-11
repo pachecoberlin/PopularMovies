@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies;
+package de.pacheco.popularmovies.recycleviews;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import de.pacheco.popularmovies.MainActivity;
+import de.pacheco.popularmovies.R;
 import de.pacheco.popularmovies.model.Movie;
 
 public class MoviePosterAdapter extends RecyclerView.Adapter<MoviePosterViewHolder> {

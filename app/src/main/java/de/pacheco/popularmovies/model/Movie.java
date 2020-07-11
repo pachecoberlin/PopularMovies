@@ -1,9 +1,14 @@
 package de.pacheco.popularmovies.model;
 
+import androidx.room.Embedded;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+import de.pacheco.popularmovies.util.MoviesUtil;
 
 @Entity(tableName = "movies")
 public class Movie {
@@ -35,18 +40,12 @@ public class Movie {
     @SerializedName("original_language")
     public String originalLanguage;
 
-    private String fullPosterPath;
-
     public String getFullPosterPath() {
-        return fullPosterPath;
-    }
-
-    public void setFullPosterPath(String path) {
-        this.fullPosterPath = path;
+        return MoviesUtil.BASE_POSTER_URL + MoviesUtil.DEFAULT_SIZE + posterPath;
     }
 
     public String[] getInformationAsArray() {
-        return new String[]{String.valueOf(id), title, fullPosterPath, releaseDate,
+        return new String[]{String.valueOf(id), title, getFullPosterPath(), releaseDate,
                 String.valueOf(rating), plot, originalLanguage, originalTitle};
     }
 }

@@ -1,6 +1,7 @@
 package de.pacheco.popularmovies;
 
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -12,8 +13,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,6 +25,8 @@ import java.util.List;
 import de.pacheco.popularmovies.databinding.ActivityMainBinding;
 import de.pacheco.popularmovies.model.Movie;
 import de.pacheco.popularmovies.model.MovieDB;
+import de.pacheco.popularmovies.model.MoviesViewModel;
+import de.pacheco.popularmovies.recycleviews.MoviePosterAdapter;
 import de.pacheco.popularmovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Movie> movies = Collections.emptyList();
     private View contents;
     private MovieDB movieDB;
+    private List<Movie> favorites;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,13 +57,19 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
-        movieDB  = MovieDB.getInstance(this);
+        movieDB = MovieDB.getInstance(this);
+        setupViewModel();
     }
 
-    @Override
-    protected void onDestroy() {
-        Log.e("TAG","DESTROYED");
-        super.onDestroy();
+    /**
+     * If the activity is re-created, it receives the same ViewModelProvider instance that was created by the first activity.
+     */
+    private void setupViewModel() {
+        new ViewModelProvider(this).get(MoviesViewModel.class).getMovies().observe(this,
+                list -> {
+                    moviePosterAdapter.setMovieData(list);
+                    favorites = list;
+                });
     }
 
     @Override
@@ -105,14 +116,13 @@ public class MainActivity extends AppCompatActivity {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i==0){
-                    LiveData<List<Movie>> liveData = movieDB.moviesDAO().loadMovies();
-                    liveData.observe(MainActivity.this,
-                            list->moviePosterAdapter.setMovieData(list));
-                }else{
+                if (i == 0) {
+                    moviePosterAdapter.setMovieData(favorites);
+                } else {
                     new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
@@ -145,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
             showMoviePosterView();
             MainActivity.this.movies = values[0];
             moviePosterAdapter.setMovieData(movies);
+//            for (Movie m: movies
+//                 ) {
+//                movieDB.moviesDAO().insertMovie(m);
+//            }
         }
 
         @Override
