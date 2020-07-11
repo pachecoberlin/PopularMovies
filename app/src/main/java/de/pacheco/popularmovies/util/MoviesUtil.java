@@ -45,11 +45,11 @@ public class MoviesUtil {
         //TODO i seem to have memory issues, when scrolling to fast. Does have something to do
         // with Picasso library. GC is trying to clean up, but seems to not be fast enough. Please
         // help. As a workaround and because it was not a requirement i only use 200 movies.
-//        int maxPage = getMaxPage();
-//        if (maxPage < 0) {
-//            return;
-//        }
-        int maxPage = 10;
+        int maxPage = getMaxPage(criteria);
+        if (maxPage < 0) {
+            return;
+        }
+//        int maxPage = 10;
         int pageCounter = 2;
         while (pageCounter <= maxPage) {
             String response = getMoviesAsJson(String.valueOf(pageCounter++), criteria);
@@ -60,7 +60,6 @@ public class MoviesUtil {
         }
     }
 
-    @SuppressWarnings("unused")
     private static int getMaxPage(String criteria) {
         String response = getMoviesAsJson(null, criteria);
         try {

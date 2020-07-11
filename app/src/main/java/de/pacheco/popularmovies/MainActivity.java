@@ -48,7 +48,12 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
-        new FetchMoviesTask().execute(MoviesUtil.POPULAR);
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.e("TAG","DESTROYED");
+        super.onDestroy();
     }
 
     @Override
@@ -64,9 +69,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
         sortBy(itemId);
-        //TODO should the next line better be called within sortBy method or not at all and
-        // better only notifyDataSetChanged()?
-        moviePosterAdapter.setMovieData(movies);
+        moviePosterAdapter.notifyDataSetChanged();
         return true;
     }
 
@@ -109,10 +112,6 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
-    /**
-     * TODO Is it good practice to not make an extra class for this?
-     * TODO Why do you teach us deprecated classes? This seems deprecated since november last year.
-     */
     public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
 
         @Override
