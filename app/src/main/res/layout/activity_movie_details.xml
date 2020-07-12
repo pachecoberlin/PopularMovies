@@ -59,6 +59,18 @@
                         android:layout_height="wrap_content"
                         android:text="@string/vote_average"
                         android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:drawable/btn_star_big_off"
+                        android:contentDescription="@string/add_to_favorites"
+                        android:scaleType="centerCrop"
+                        android:onClick="toggleFavorite"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -68,6 +80,29 @@
                 android:layout_height="wrap_content"
                 android:text="@string/plot_synopsis"
                 android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/play_trailer" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reviews"
+                android:textSize="22sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_reviews"
+                android:layout_marginTop="10dp"
+                />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

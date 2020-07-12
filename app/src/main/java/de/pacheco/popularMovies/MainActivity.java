@@ -1,5 +1,6 @@
-package de.pacheco.popularmovies;
+package de.pacheco.popularMovies;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,29 +14,37 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-import de.pacheco.popularmovies.model.Movie;
-import de.pacheco.popularmovies.util.MoviesUtil;
+import de.pacheco.popularMovies.databinding.ActivityMainBinding;
+import de.pacheco.popularMovies.model.Movie;
+import de.pacheco.popularMovies.model.MoviesViewModel;
+import de.pacheco.popularMovies.recycleviews.MoviePosterAdapter;
+import de.pacheco.popularMovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
-    private static String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     private MoviePosterAdapter moviePosterAdapter;
     private ProgressBar progressBar;
     private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
     private View contents;
+    private List<Movie> favorites;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        progressBar = binding.pbLoadingIndicator;
+        networkErrorMessage = binding.tvErrorMessageDisplay;
+        contents = binding.contents;
         progressBar = findViewById(R.id.pb_loading_indicator);
         networkErrorMessage = findViewById(R.id.tv_error_message_display);
         contents = findViewById(R.id.contents);
@@ -48,12 +57,18 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
+        setupViewModel();
     }
 
-    @Override
-    protected void onDestroy() {
-        Log.e("TAG","DESTROYED");
-        super.onDestroy();
+    /**
+     * If the activity is re-created, it receives the same ViewModelProvider instance that was created by the first activity.
+     */
+    private void setupViewModel() {
+        new ViewModelProvider(this).get(MoviesViewModel.class).getMovies().observe(this,
+                list -> {
+                    moviePosterAdapter.setMovieData(list);
+                    favorites = list;
+                });
     }
 
     @Override
@@ -74,18 +89,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sortBy(final int itemId) {
-        Collections.sort(movies, new Comparator<Movie>() {
-            @Override
-            public int compare(Movie movie1, Movie movie2) {
-                switch (itemId) {
-                    case R.id.sort_by_popularity:
-                        return Float.compare(movie1.popularity, movie2.popularity);
-                    case R.id.sort_by_rating:
-                        return Float.compare(movie1.rating, movie2.rating);
-                }
-                Log.d(TAG, "Not supported operation id: " + itemId);
-                return 0;
+        Collections.sort(movies, (movie1, movie2) -> {
+            switch (itemId) {
+                case R.id.sort_by_popularity:
+                    return Float.compare(movie1.popularity, movie2.popularity);
+                case R.id.sort_by_rating:
+                    return Float.compare(movie1.rating, movie2.rating);
             }
+            Log.d(TAG, "Not supported operation id: " + itemId);
+            return 0;
         });
     }
 
@@ -99,11 +111,17 @@ public class MainActivity extends AppCompatActivity {
         contents.setVisibility(View.VISIBLE);
     }
 
+    @SuppressWarnings("deprecation")
     public AdapterView.OnItemSelectedListener getSpinnerListener() {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                if (i == 0) {
+                    moviePosterAdapter.setMovieData(favorites);
+                    movies = favorites;
+                } else {
+                    new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                }
             }
 
             @Override
@@ -112,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
+    @SuppressLint("StaticFieldLeak")
+    @SuppressWarnings("deprecation")
     public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
 
         @Override
@@ -127,13 +147,15 @@ public class MainActivity extends AppCompatActivity {
             }
             String criteria = params[0];
             List<Movie> movies = MoviesUtil.getFirstMovies(criteria);
+            //noinspection unchecked
             publishProgress(movies);
             MoviesUtil.addAllMovies(movies, criteria);
             return movies;
         }
 
+        @SafeVarargs
         @Override
-        protected void onProgressUpdate(List<Movie>... values) {
+        protected final void onProgressUpdate(List<Movie>... values) {
             progressBar.setVisibility(View.INVISIBLE);
             showMoviePosterView();
             MainActivity.this.movies = values[0];
