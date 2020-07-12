@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.util;
+package de.pacheco.popularMovies.util;
 
 import android.net.Uri;
 import android.util.Log;
@@ -18,10 +18,10 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import de.pacheco.popularmovies.ApiKey;
-import de.pacheco.popularmovies.model.Movie;
-import de.pacheco.popularmovies.model.RelatedVideo;
-import de.pacheco.popularmovies.model.Review;
+import de.pacheco.popularMovies.ApiKey;
+import de.pacheco.popularMovies.model.Movie;
+import de.pacheco.popularMovies.model.RelatedVideo;
+import de.pacheco.popularMovies.model.Review;
 
 public class MoviesUtil {
     private static final String TAG = MoviesUtil.class.getSimpleName();
@@ -153,9 +153,11 @@ public class MoviesUtil {
     public static <T> List<T> getMovieInformation(String whichInfo, String movieId) {
         Uri.Builder builder = Uri.parse(TMDB_MOVIES_URL + movieId + whichInfo).buildUpon()
                 .appendQueryParameter(API_KEY_PARAM, API_KEY_VALUE);
-        Class type = REVIEWS.equals(whichInfo) ? Review.class : RELATED_VIDEOS.equals(whichInfo) ?
+        Class<?> type = REVIEWS.equals(whichInfo) ? Review.class :
+                RELATED_VIDEOS.equals(whichInfo) ?
                 RelatedVideo.class : null;
         try {
+            //noinspection unchecked
             return (List<T>) parseResponse(NetworkUtils.getResponseFromHttpUrl(getUrl(builder)),
                     type);
         } catch (IOException | JSONException | NullPointerException e) {

@@ -60,12 +60,17 @@
                         android:text="@string/vote_average"
                         android:textSize="16sp" />
 
-                    <Button
-                        android:id="@+id/favorite"
+                    <ImageView
+                        android:id="@+id/btn_favorite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:drawable/btn_star_big_off"
                         android:contentDescription="@string/add_to_favorites"
-                        android:text="@string/add_to_favorites" />
+                        android:scaleType="centerCrop"
+                        android:onClick="toggleFavorite"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -80,13 +85,24 @@
                 android:id="@+id/rv_trailers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Play Trailer" />
+                android:text="@string/play_trailer" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reviews"
+                android:textSize="22sp"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_reviews"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Show reviews" />
+                android:text="@string/show_reviews"
+                android:layout_marginTop="10dp"
+                />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

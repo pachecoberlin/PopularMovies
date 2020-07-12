@@ -1,8 +1,6 @@
-package de.pacheco.popularmovies.recycleviews;
+package de.pacheco.popularMovies.recycleviews;
 
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
@@ -13,18 +11,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import de.pacheco.popularmovies.R;
-import de.pacheco.popularmovies.model.RelatedVideo;
+import de.pacheco.popularMovies.R;
+import de.pacheco.popularMovies.model.RelatedVideo;
 
 public class RelatedVideoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    private final ImageView imageView;
     private final Activity activity;
     private final TextView textView;
     private RelatedVideo video;
 
     public RelatedVideoViewHolder(@NonNull View itemView, Activity activity) {
         super(itemView);
-        imageView = itemView.findViewById(R.id.iv_video);
+        ImageView imageView = itemView.findViewById(R.id.iv_video);
         textView = itemView.findViewById(R.id.tv_trailer);
         imageView.setOnClickListener(this);
         this.activity = activity;
@@ -50,7 +47,7 @@ public class RelatedVideoViewHolder extends RecyclerView.ViewHolder implements V
             activity.startActivity(webIntent);
         } else {
             Toast.makeText(activity, "Sorry no youtube and no browser... let me without my " +
-                    "trousers", Toast.LENGTH_LONG);
+                    "trousers", Toast.LENGTH_LONG).show();
         }
     }
 }

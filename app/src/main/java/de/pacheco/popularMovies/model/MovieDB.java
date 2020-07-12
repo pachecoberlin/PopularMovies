@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.model;
+package de.pacheco.popularMovies.model;
 
 import android.content.Context;
 

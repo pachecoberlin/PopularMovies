@@ -1,7 +1,7 @@
-package de.pacheco.popularmovies;
+package de.pacheco.popularMovies;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,7 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -22,22 +21,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Collections;
 import java.util.List;
 
-import de.pacheco.popularmovies.databinding.ActivityMainBinding;
-import de.pacheco.popularmovies.model.Movie;
-import de.pacheco.popularmovies.model.MovieDB;
-import de.pacheco.popularmovies.model.MoviesViewModel;
-import de.pacheco.popularmovies.recycleviews.MoviePosterAdapter;
-import de.pacheco.popularmovies.util.MoviesUtil;
+import de.pacheco.popularMovies.databinding.ActivityMainBinding;
+import de.pacheco.popularMovies.model.Movie;
+import de.pacheco.popularMovies.model.MoviesViewModel;
+import de.pacheco.popularMovies.recycleviews.MoviePosterAdapter;
+import de.pacheco.popularMovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
-    private static String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     private MoviePosterAdapter moviePosterAdapter;
     private ProgressBar progressBar;
     private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
     private View contents;
-    private MovieDB movieDB;
     private List<Movie> favorites;
 
     @Override
@@ -48,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         progressBar = binding.pbLoadingIndicator;
         networkErrorMessage = binding.tvErrorMessageDisplay;
         contents = binding.contents;
+        progressBar = findViewById(R.id.pb_loading_indicator);
+        networkErrorMessage = findViewById(R.id.tv_error_message_display);
+        contents = findViewById(R.id.contents);
         Spinner spinner = findViewById(R.id.spinner_sortBy);
         spinner.setOnItemSelectedListener(getSpinnerListener());
         RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         moviePosters.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
         moviePosters.setAdapter(moviePosterAdapter);
-        movieDB = MovieDB.getInstance(this);
         setupViewModel();
     }
 
@@ -112,12 +111,14 @@ public class MainActivity extends AppCompatActivity {
         contents.setVisibility(View.VISIBLE);
     }
 
+    @SuppressWarnings("deprecation")
     public AdapterView.OnItemSelectedListener getSpinnerListener() {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
                     moviePosterAdapter.setMovieData(favorites);
+                    movies = favorites;
                 } else {
                     new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
                 }
@@ -129,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
+    @SuppressLint("StaticFieldLeak")
+    @SuppressWarnings("deprecation")
     public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
 
         @Override
@@ -144,21 +147,19 @@ public class MainActivity extends AppCompatActivity {
             }
             String criteria = params[0];
             List<Movie> movies = MoviesUtil.getFirstMovies(criteria);
+            //noinspection unchecked
             publishProgress(movies);
             MoviesUtil.addAllMovies(movies, criteria);
             return movies;
         }
 
+        @SafeVarargs
         @Override
-        protected void onProgressUpdate(List<Movie>... values) {
+        protected final void onProgressUpdate(List<Movie>... values) {
             progressBar.setVisibility(View.INVISIBLE);
             showMoviePosterView();
             MainActivity.this.movies = values[0];
             moviePosterAdapter.setMovieData(movies);
-//            for (Movie m: movies
-//                 ) {
-//                movieDB.moviesDAO().insertMovie(m);
-//            }
         }
 
         @Override

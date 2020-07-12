@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.recycleviews;
+package de.pacheco.popularMovies.recycleviews;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -10,13 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import de.pacheco.popularmovies.MainActivity;
-import de.pacheco.popularmovies.MovieDetailsActivity;
-import de.pacheco.popularmovies.R;
-import de.pacheco.popularmovies.model.RelatedVideo;
+import de.pacheco.popularMovies.MovieDetailsActivity;
+import de.pacheco.popularMovies.R;
+import de.pacheco.popularMovies.model.RelatedVideo;
 
 public class RelatedVideosAdapter extends RecyclerView.Adapter<RelatedVideoViewHolder> {
-    private Activity activity;
+    private final Activity activity;
     private List<RelatedVideo> videos;
 
     public RelatedVideosAdapter(MovieDetailsActivity mainActivity) {

@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.model;
+package de.pacheco.popularMovies.model;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -10,6 +10,7 @@ import androidx.room.Update;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @Dao
 public interface MovieDAO {
     @Insert

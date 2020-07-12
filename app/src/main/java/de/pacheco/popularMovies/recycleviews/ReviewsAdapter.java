@@ -1,6 +1,5 @@
-package de.pacheco.popularmovies.recycleviews;
+package de.pacheco.popularMovies.recycleviews;
 
-import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,21 +9,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import de.pacheco.popularmovies.MovieDetailsActivity;
-import de.pacheco.popularmovies.R;
-import de.pacheco.popularmovies.model.Review;
+import de.pacheco.popularMovies.R;
+import de.pacheco.popularMovies.model.Review;
 
 public class ReviewsAdapter extends RecyclerView.Adapter<ReviewViewHolder> {
-    private Activity activity;
     private List<Review> reviews;
 
     public void setReviewsData(List<Review> reviews) {
         this.reviews = reviews;
         notifyDataSetChanged();
-    }
-
-    public ReviewsAdapter(MovieDetailsActivity activity) {
-        this.activity = activity;
     }
 
     @NonNull

@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.model;
+package de.pacheco.popularMovies.model;
 
 import android.app.Application;
 
@@ -23,6 +23,7 @@ public class MoviesViewModel extends AndroidViewModel {
         super(application);
     }
 
+    @SuppressWarnings("EmptyMethod")
     @Override
     protected void onCleared() {
         super.onCleared();

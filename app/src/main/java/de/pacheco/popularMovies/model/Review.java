@@ -1,4 +1,4 @@
-package de.pacheco.popularmovies.model;
+package de.pacheco.popularMovies.model;
 
 import com.google.gson.annotations.SerializedName;
 

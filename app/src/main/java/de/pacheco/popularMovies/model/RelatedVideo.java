@@ -1,7 +1,4 @@
-package de.pacheco.popularmovies.model;
-
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
+package de.pacheco.popularMovies.model;
 
 import com.google.gson.annotations.SerializedName;
 
