@@ -46,7 +46,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         RecyclerView trailers = findViewById(R.id.rv_trailers);
         trailers.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this,
-                RecyclerView.VERTICAL, false);
+                RecyclerView.HORIZONTAL, false);
         trailers.setLayoutManager(layoutManager);
         RelatedVideosAdapter relatedVideosAdapter = new RelatedVideosAdapter(this);
         trailers.setAdapter(relatedVideosAdapter);
@@ -76,7 +76,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
             return;
         }
         title.setText(movieInformation[1]);
-        Picasso.get().load(movieInformation[2]).into(poster);
+        Picasso.get().load(movieInformation[2]).placeholder(R.mipmap.ic_launcher).into(poster);
         releaseDate.setText(movieInformation[3].substring(0, movieInformation[3].indexOf("-")));
         String rating = movieInformation[4] + "/10";
         this.rating.setText(rating);
