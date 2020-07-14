@@ -40,24 +40,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-        progressBar = binding.pbLoadingIndicator;
-        networkErrorMessage = binding.tvErrorMessageDisplay;
-        contents = binding.contents;
-        progressBar = findViewById(R.id.pb_loading_indicator);
-        networkErrorMessage = findViewById(R.id.tv_error_message_display);
-        contents = findViewById(R.id.contents);
-        Spinner spinner = findViewById(R.id.spinner_sortBy);
-        spinner.setOnItemSelectedListener(getSpinnerListener());
-        RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);
-        moviePosters.setHasFixedSize(true);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
-                RecyclerView.VERTICAL, false);
-        moviePosters.setLayoutManager(layoutManager);
-        moviePosterAdapter = new MoviePosterAdapter(this);
-        moviePosters.setAdapter(moviePosterAdapter);
-        setupViewModel();
+            //setContentView(R.layout.activity_main);
+            ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+            progressBar = binding.pbLoadingIndicator;
+            networkErrorMessage = binding.tvErrorMessageDisplay;
+            contents = binding.contents;
+            Spinner spinner = binding.spinnerSortBy;
+            spinner.setOnItemSelectedListener(getSpinnerListener());
+            binding.rvMovieOverview.setHasFixedSize(true);
+            GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
+                    RecyclerView.VERTICAL, false);
+            binding.rvMovieOverview.setLayoutManager(layoutManager);
+            moviePosterAdapter = new MoviePosterAdapter(this);
+            binding.rvMovieOverview.setAdapter(moviePosterAdapter);
+            View view = binding.getRoot();
+            setContentView(view);
+            setupViewModel();
     }
 
     /**

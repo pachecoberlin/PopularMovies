@@ -29,7 +29,7 @@ public class MoviesUtil {
     public static final String RATED = "top_rated";
     private static final String TMDB_MOVIES_URL = "https://api.themoviedb.org/3/movie/";
     public static final String BASE_POSTER_URL = "http://image.tmdb.org/t/p/";
-    public static final String DEFAULT_SIZE = "w185";
+    public static final String DEFAULT_SIZE = "w300";
     private static final String API_KEY_PARAM = "api_key";
     /**
      * TODO Please provide your personal API key
@@ -46,14 +46,11 @@ public class MoviesUtil {
      * @param criteria the sort criteria
      */
     public static void addAllMovies(List<Movie> movies, String criteria) {
-        //TODO i seem to have memory issues, when scrolling to fast. Does have something to do
-        // with Picasso library. GC is trying to clean up, but seems to not be fast enough. Please
-        // help. As a workaround and because it was not a requirement i only use 200 movies.
         int maxPage = getMaxPage(criteria);
         if (maxPage < 0) {
             return;
         }
-        maxPage = 10;
+        maxPage = 2; //TODO delete line
         int pageCounter = 2;
         while (pageCounter <= maxPage) {
             String response = getMoviesAsJson(String.valueOf(pageCounter++), criteria);
