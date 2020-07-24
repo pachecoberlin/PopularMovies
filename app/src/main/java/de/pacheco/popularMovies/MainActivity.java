@@ -1,16 +1,12 @@
 package de.pacheco.popularMovies;
 
-import android.annotation.SuppressLint;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,41 +27,55 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private MoviePosterAdapter moviePosterAdapter;
-    private ProgressBar progressBar;
-    private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
-    private View contents;
     private List<Movie> favorites;
+    private List<Movie> populars;
+    private List<Movie> topRated;
+    private String selection = MoviesUtil.FAVOURITES;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            //setContentView(R.layout.activity_main);
-            ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-            progressBar = binding.pbLoadingIndicator;
-            networkErrorMessage = binding.tvErrorMessageDisplay;
-            contents = binding.contents;
-            Spinner spinner = binding.spinnerSortBy;
-            spinner.setOnItemSelectedListener(getSpinnerListener());
-            binding.rvMovieOverview.setHasFixedSize(true);
-            GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
-                    RecyclerView.VERTICAL, false);
-            binding.rvMovieOverview.setLayoutManager(layoutManager);
-            moviePosterAdapter = new MoviePosterAdapter(this);
-            binding.rvMovieOverview.setAdapter(moviePosterAdapter);
-            View view = binding.getRoot();
-            setContentView(view);
-            setupViewModel();
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        Spinner spinner = binding.spinnerSortBy;
+        spinner.setOnItemSelectedListener(getSpinnerListener());
+        binding.rvMovieOverview.setHasFixedSize(true);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
+                RecyclerView.VERTICAL, false);
+        binding.rvMovieOverview.setLayoutManager(layoutManager);
+        moviePosterAdapter = new MoviePosterAdapter(this);
+        binding.rvMovieOverview.setAdapter(moviePosterAdapter);
+        View view = binding.getRoot();
+        setContentView(view);
+        setupViewModel();
+        moviePosterAdapter.setMovieData(favorites);
     }
 
     /**
      * If the activity is re-created, it receives the same ViewModelProvider instance that was created by the first activity.
      */
     private void setupViewModel() {
-        new ViewModelProvider(this).get(MoviesViewModel.class).getMovies().observe(this,
+        MoviesViewModel moviesViewModel = new ViewModelProvider(this).get(MoviesViewModel.class);
+        moviesViewModel.getFavouriteMovies().observe(this,
                 list -> {
-                    moviePosterAdapter.setMovieData(list);
                     favorites = list;
+                    if (selection.equals(MoviesUtil.FAVOURITES)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
+                });
+        moviesViewModel.getPopularMovies().observe(this,
+                list -> {
+                    populars = list;
+                    if (selection.equals(MoviesUtil.POPULAR)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
+                });
+        moviesViewModel.getTopRatedMovies().observe(this,
+                list -> {
+                    topRated = list;
+                    if (selection.equals(MoviesUtil.TOP_RATED)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
                 });
     }
 
@@ -99,26 +109,22 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showErrorMessage() {
-        networkErrorMessage.setVisibility(View.VISIBLE);
-        contents.setVisibility(View.INVISIBLE);
-    }
-
-    private void showMoviePosterView() {
-        networkErrorMessage.setVisibility(View.INVISIBLE);
-        contents.setVisibility(View.VISIBLE);
-    }
-
-    @SuppressWarnings("deprecation")
     public AdapterView.OnItemSelectedListener getSpinnerListener() {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
+                    selection = MoviesUtil.FAVOURITES;
                     moviePosterAdapter.setMovieData(favorites);
                     movies = favorites;
+                } else if (i == 1) {
+                    selection = MoviesUtil.POPULAR;
+                    moviePosterAdapter.setMovieData(populars);
+                    movies = populars;
                 } else {
-                    new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                    selection = MoviesUtil.TOP_RATED;
+                    moviePosterAdapter.setMovieData(topRated);
+                    movies = topRated;
                 }
             }
 
@@ -126,50 +132,5 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         };
-    }
-
-    @SuppressLint("StaticFieldLeak")
-    @SuppressWarnings("deprecation")
-    public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            progressBar.setVisibility(View.VISIBLE);
-        }
-
-        @Override
-        protected List<Movie> doInBackground(String... params) {
-            if (params.length < 1) {
-                return MoviesUtil.getFirstMovies();
-            }
-            String criteria = params[0];
-            List<Movie> movies = MoviesUtil.getFirstMovies(criteria);
-            //noinspection unchecked
-            publishProgress(movies);
-            MoviesUtil.addAllMovies(movies, criteria);
-            return movies;
-        }
-
-        @SafeVarargs
-        @Override
-        protected final void onProgressUpdate(List<Movie>... values) {
-            progressBar.setVisibility(View.INVISIBLE);
-            showMoviePosterView();
-            MainActivity.this.movies = values[0];
-            moviePosterAdapter.setMovieData(movies);
-        }
-
-        @Override
-        protected void onPostExecute(List<Movie> movies) {
-            progressBar.setVisibility(View.INVISIBLE);
-            if (movies != null && !movies.isEmpty()) {
-                showMoviePosterView();
-                MainActivity.this.movies = movies;
-                moviePosterAdapter.setMovieData(movies);
-            } else {
-                showErrorMessage();
-            }
-        }
     }
 }

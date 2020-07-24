@@ -16,6 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import de.pacheco.popularMovies.databinding.CollapsingToolbarBinding;
 import de.pacheco.popularMovies.model.Movie;
 import de.pacheco.popularMovies.model.MovieDB;
 import de.pacheco.popularMovies.model.RelatedVideo;
@@ -33,24 +34,25 @@ public class MovieDetailsActivity extends AppCompatActivity {
     private TextView rating;
     private Movie movie;
     private boolean isFavorite = false;
+    private boolean isSetFavouriteTaskDone=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movie_details);
-        title = findViewById(R.id.tv_title);
-        poster = findViewById(R.id.iv_movie_thumbnail);
-        releaseDate = findViewById(R.id.tv_release_date);
-        rating = findViewById(R.id.tv_vote_average);
-        plot = findViewById(R.id.tv_plot_synopsis);
-        RecyclerView trailers = findViewById(R.id.rv_trailers);
+        CollapsingToolbarBinding binding = CollapsingToolbarBinding.inflate(getLayoutInflater());
+        title = binding.details.tvTitle;
+        poster = binding.details.ivMovieThumbnail;
+        releaseDate = binding.details.tvReleaseDate;
+        rating = binding.details.tvVoteAverage;
+        plot = binding.details.tvPlotSynopsis;
+        RecyclerView trailers = binding.details.rvTrailers;
+        RecyclerView reviews = binding.details.rvReviews;
         trailers.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this,
                 RecyclerView.HORIZONTAL, false);
         trailers.setLayoutManager(layoutManager);
         RelatedVideosAdapter relatedVideosAdapter = new RelatedVideosAdapter(this);
         trailers.setAdapter(relatedVideosAdapter);
-        RecyclerView reviews = findViewById(R.id.rv_reviews);
         reviews.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this,
                 RecyclerView.VERTICAL, false);
@@ -58,6 +60,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         ReviewsAdapter reviewsAdapter = new ReviewsAdapter();
         reviews.setAdapter(reviewsAdapter);
         fillViews(relatedVideosAdapter, reviewsAdapter);
+        setContentView(binding.getRoot());
     }
 
     @SuppressWarnings("deprecation")
@@ -91,11 +94,10 @@ public class MovieDetailsActivity extends AppCompatActivity {
     @SuppressWarnings("deprecation")
     public void toggleFavorite(View view) {
         if (isFavorite) {
-            new ToggleFavoriteTask(true, view).execute(movie);
+            new ToggleFavoriteTask( view).execute(movie);
         } else {
-            new ToggleFavoriteTask(false, view).execute(movie);
+            new ToggleFavoriteTask( view).execute(movie);
         }
-        isFavorite = !isFavorite;
     }
 
     @SuppressWarnings("deprecation")
@@ -134,17 +136,21 @@ public class MovieDetailsActivity extends AppCompatActivity {
     public class ToggleFavoriteTask extends AsyncTask<Movie, Void, Void> {
 
         private final View view;
-        private final boolean remove;
 
-        public ToggleFavoriteTask(boolean remove, View view) {
-            this.remove = remove;
+        public ToggleFavoriteTask(View view) {
             this.view = view;
         }
 
         @Override
         protected Void doInBackground(Movie... params) {
             Movie movie = params[0];
-            if (remove) {
+            while (!isSetFavouriteTaskDone){
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException ignored) {
+                }
+            }
+            if (isFavorite) {
                 MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().deleteMovie(movie);
             } else {
                 MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().insertMovie(movie);
@@ -154,10 +160,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Void aVoid) {
-            if (remove) {
-                view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
-            } else {
+            isFavorite = !isFavorite;
+            if (isFavorite) {
                 view.setBackground(getDrawable(android.R.drawable.btn_star_big_on));
+            } else {
+                view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
             }
         }
     }
@@ -176,11 +183,12 @@ public class MovieDetailsActivity extends AppCompatActivity {
             View view = findViewById(R.id.btn_favorite);
             if (exists) {
                 view.setBackground(getDrawable(android.R.drawable.btn_star_big_on));
-                isFavorite=true;
+                isFavorite = true;
             } else {
                 view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
-                isFavorite=false;
+                isFavorite = false;
             }
+            isSetFavouriteTaskDone= true;
         }
     }
 }

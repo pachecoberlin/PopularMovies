@@ -24,9 +24,10 @@ import de.pacheco.popularMovies.model.RelatedVideo;
 import de.pacheco.popularMovies.model.Review;
 
 public class MoviesUtil {
+    public static final String FAVOURITES = "favourites";
     private static final String TAG = MoviesUtil.class.getSimpleName();
     public static final String POPULAR = "popular";
-    public static final String RATED = "top_rated";
+    public static final String TOP_RATED = "top_rated";
     private static final String TMDB_MOVIES_URL = "https://api.themoviedb.org/3/movie/";
     public static final String BASE_POSTER_URL = "http://image.tmdb.org/t/p/";
     public static final String DEFAULT_SIZE = "w300";
@@ -50,7 +51,6 @@ public class MoviesUtil {
         if (maxPage < 0) {
             return;
         }
-        maxPage = 2; //TODO delete line
         int pageCounter = 2;
         while (pageCounter <= maxPage) {
             String response = getMoviesAsJson(String.valueOf(pageCounter++), criteria);
