@@ -25,11 +25,13 @@ import de.pacheco.popularMovies.model.Review;
 
 public class MoviesUtil {
     public static final String FAVOURITES = "favourites";
+    public static final String W1280 = "w1280";
+    public static final String W780 = "w780";
     private static final String TAG = MoviesUtil.class.getSimpleName();
     public static final String POPULAR = "popular";
     public static final String TOP_RATED = "top_rated";
     private static final String TMDB_MOVIES_URL = "https://api.themoviedb.org/3/movie/";
-    public static final String BASE_POSTER_URL = "http://image.tmdb.org/t/p/";
+    public static final String BASE_POSTER_URL = "https://image.tmdb.org/t/p/";
     public static final String DEFAULT_SIZE = "w300";
     private static final String API_KEY_PARAM = "api_key";
     /**

@@ -34,12 +34,15 @@ public class MovieDetailsActivity extends AppCompatActivity {
     private TextView rating;
     private Movie movie;
     private boolean isFavorite = false;
-    private boolean isSetFavouriteTaskDone=false;
+    private boolean isSetFavouriteTaskDone = false;
+    private ImageView backdropPoster;
+    private ToggleFavoriteTask toggleFavoriteTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         CollapsingToolbarBinding binding = CollapsingToolbarBinding.inflate(getLayoutInflater());
+        backdropPoster = binding.ivDetail;
         title = binding.details.tvTitle;
         poster = binding.details.ivMovieThumbnail;
         releaseDate = binding.details.tvReleaseDate;
@@ -79,7 +82,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
             return;
         }
         title.setText(movieInformation[1]);
-        Picasso.get().load(movieInformation[2]).placeholder(R.mipmap.ic_launcher).into(poster);
+        Picasso.get().load(movie.getBackdropPath()).placeholder(R.drawable.ic_tmdb_logo).error(
+                R.drawable.ic_tmdb_logo).into(
+                backdropPoster);
+        Picasso.get().load(movieInformation[2]).placeholder(R.drawable.ic_tmdb_logo).error(
+                R.drawable.ic_tmdb_logo).into(poster);
         releaseDate.setText(movieInformation[3].substring(0, movieInformation[3].indexOf("-")));
         String rating = movieInformation[4] + "/10";
         this.rating.setText(rating);
@@ -93,11 +100,16 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     @SuppressWarnings("deprecation")
     public void toggleFavorite(View view) {
+        isFavorite = !isFavorite;
         if (isFavorite) {
-            new ToggleFavoriteTask( view).execute(movie);
+            view.setBackground(getDrawable(android.R.drawable.btn_star_big_on));
         } else {
-            new ToggleFavoriteTask( view).execute(movie);
+            view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
         }
+        //TODO Thread.start verwendne damit das richtig in die DB geschrieben wird, weil
+        // AsyncTask irgendwann startet nicht sofort
+        toggleFavoriteTask = new ToggleFavoriteTask(view, isFavorite);
+        toggleFavoriteTask.execute(movie);
     }
 
     @SuppressWarnings("deprecation")
@@ -136,36 +148,23 @@ public class MovieDetailsActivity extends AppCompatActivity {
     public class ToggleFavoriteTask extends AsyncTask<Movie, Void, Void> {
 
         private final View view;
+        private final boolean makeFavourite;
 
-        public ToggleFavoriteTask(View view) {
+        public ToggleFavoriteTask(View view, boolean isFavorite) {
             this.view = view;
+            this.makeFavourite = isFavorite;
         }
 
         @Override
         protected Void doInBackground(Movie... params) {
+            toggleFavoriteTask = null;
             Movie movie = params[0];
-            while (!isSetFavouriteTaskDone){
-                try {
-                    Thread.sleep(200);
-                } catch (InterruptedException ignored) {
-                }
-            }
-            if (isFavorite) {
-                MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().deleteMovie(movie);
-            } else {
+            if (makeFavourite) {
                 MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().insertMovie(movie);
+            } else {
+                MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().deleteMovie(movie);
             }
             return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            isFavorite = !isFavorite;
-            if (isFavorite) {
-                view.setBackground(getDrawable(android.R.drawable.btn_star_big_on));
-            } else {
-                view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
-            }
         }
     }
 
@@ -188,7 +187,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
                 view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
                 isFavorite = false;
             }
-            isSetFavouriteTaskDone= true;
+            isSetFavouriteTaskDone = true;
         }
     }
 }
