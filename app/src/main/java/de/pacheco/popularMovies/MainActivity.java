@@ -1,14 +1,16 @@
 package de.pacheco.popularMovies;
 
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -25,6 +27,8 @@ import de.pacheco.popularMovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String BUNDLE_LAYOUT = "BUNDLE_LAYOUT";
+    public static final String BUNDLE_SELECTION = "Selection";
 
     private MoviePosterAdapter moviePosterAdapter;
     private List<Movie> movies = Collections.emptyList();
@@ -32,15 +36,16 @@ public class MainActivity extends AppCompatActivity {
     private List<Movie> populars;
     private List<Movie> topRated;
     private String selection = MoviesUtil.FAVOURITES;
+    private GridLayoutManager layoutManager;
+    private String oldSelection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-        Spinner spinner = binding.spinnerSortBy;
-        spinner.setOnItemSelectedListener(getSpinnerListener());
+        binding.spinnerSortBy.setOnItemSelectedListener(getSpinnerListener());
         binding.rvMovieOverview.setHasFixedSize(true);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
+        layoutManager = new GridLayoutManager(this, calculateNoOfColumns(),
                 RecyclerView.VERTICAL, false);
         binding.rvMovieOverview.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
@@ -48,7 +53,17 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
         setupViewModel();
-        moviePosterAdapter.setMovieData(favorites);
+        //data is set within spinner listener, which is called after created
+    }
+
+    public int calculateNoOfColumns() {
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
+        int scalingFactor = 200;
+        int noOfColumns = (int) (dpWidth / scalingFactor);
+        if (noOfColumns < 2)
+            noOfColumns = 2;
+        return noOfColumns;
     }
 
     /**
@@ -77,6 +92,46 @@ public class MainActivity extends AppCompatActivity {
                         moviePosterAdapter.notifyDataSetChanged();
                     }
                 });
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(BUNDLE_LAYOUT,
+                layoutManager.onSaveInstanceState());
+        outState.putString(BUNDLE_SELECTION, selection);
+    }
+
+    @Override
+    public void onRestoreInstanceState(@Nullable Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            super.onRestoreInstanceState(savedInstanceState);
+            selection = savedInstanceState.getString(BUNDLE_SELECTION);
+            setMovieData(selection);
+            Parcelable savedRecyclerLayoutState = savedInstanceState.getParcelable(BUNDLE_LAYOUT);
+            layoutManager.onRestoreInstanceState(savedRecyclerLayoutState);
+        }
+    }
+
+    private void setMovieData(String selection) {
+        if (selection == null) {
+            selection = MoviesUtil.FAVOURITES;
+        }
+        switch (selection) {
+            case MoviesUtil.POPULAR:
+                moviePosterAdapter.setMovieData(populars);
+                movies = populars;
+                break;
+            case MoviesUtil.TOP_RATED:
+                moviePosterAdapter.setMovieData(topRated);
+                movies = topRated;
+                break;
+            case MoviesUtil.FAVOURITES:
+            default:
+                moviePosterAdapter.setMovieData(favorites);
+                movies = favorites;
+                break;
+        }
     }
 
     @Override
@@ -115,17 +170,16 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
                     selection = MoviesUtil.FAVOURITES;
-                    moviePosterAdapter.setMovieData(favorites);
-                    movies = favorites;
                 } else if (i == 1) {
                     selection = MoviesUtil.POPULAR;
-                    moviePosterAdapter.setMovieData(populars);
-                    movies = populars;
                 } else {
                     selection = MoviesUtil.TOP_RATED;
-                    moviePosterAdapter.setMovieData(topRated);
-                    movies = topRated;
                 }
+                if (oldSelection != null && !oldSelection.equals(selection)) {
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                }
+                setMovieData(selection);
+                oldSelection = selection;
             }
 
             @Override
