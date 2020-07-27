@@ -1,5 +1,14 @@
 package de.pacheco.popularMovies;
 
+import de.pacheco.popularMovies.databinding.CollapsingToolbarBinding;
+import de.pacheco.popularMovies.model.Movie;
+import de.pacheco.popularMovies.model.MovieDB;
+import de.pacheco.popularMovies.model.ReviewResults;
+import de.pacheco.popularMovies.model.TrailerResults;
+import de.pacheco.popularMovies.recycleviews.RelatedVideosAdapter;
+import de.pacheco.popularMovies.recycleviews.ReviewsAdapter;
+import de.pacheco.popularMovies.util.MoviesUtil;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -14,14 +23,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import de.pacheco.popularMovies.databinding.CollapsingToolbarBinding;
-import de.pacheco.popularMovies.model.Movie;
-import de.pacheco.popularMovies.model.MovieDB;
-import de.pacheco.popularMovies.model.ReviewResults;
-import de.pacheco.popularMovies.model.TrailerResults;
-import de.pacheco.popularMovies.recycleviews.RelatedVideosAdapter;
-import de.pacheco.popularMovies.recycleviews.ReviewsAdapter;
-import de.pacheco.popularMovies.util.MoviesUtil;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -35,9 +36,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     private TextView rating;
     private Movie movie;
     private boolean isFavorite = false;
-    private boolean isSetFavouriteTaskDone = false;
     private ImageView backdropPoster;
-    private ToggleFavoriteTask toggleFavoriteTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +73,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
             public void onResponse(Call<ReviewResults> call, Response<ReviewResults> response) {
                 reviewsAdapter.setReviewsData(response.body().results);
             }
+
             @Override
             public void onFailure(Call<ReviewResults> call, Throwable t) {
                 t.printStackTrace();
@@ -85,6 +85,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
             public void onResponse(Call<TrailerResults> call, Response<TrailerResults> response) {
                 relatedVideosAdapter.setVideosData(response.body().results);
             }
+
             @Override
             public void onFailure(Call<TrailerResults> call, Throwable t) {
                 t.printStackTrace();
@@ -128,28 +129,22 @@ public class MovieDetailsActivity extends AppCompatActivity {
         } else {
             view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
         }
-        //TODO Thread.start verwendne damit das richtig in die DB geschrieben wird, weil
-        // AsyncTask irgendwann startet nicht sofort
-        toggleFavoriteTask = new ToggleFavoriteTask(view, isFavorite);
         //noinspection deprecation
-        toggleFavoriteTask.execute(movie);
+        new ToggleFavoriteTask(isFavorite).execute(movie);
     }
 
     @SuppressWarnings("deprecation")
     @SuppressLint("StaticFieldLeak")
     public class ToggleFavoriteTask extends AsyncTask<Movie, Void, Void> {
 
-        private final View view;
         private final boolean makeFavourite;
 
-        public ToggleFavoriteTask(View view, boolean isFavorite) {
-            this.view = view;
+        public ToggleFavoriteTask(boolean isFavorite) {
             this.makeFavourite = isFavorite;
         }
 
         @Override
         protected Void doInBackground(Movie... params) {
-            toggleFavoriteTask = null;
             Movie movie = params[0];
             if (makeFavourite) {
                 MovieDB.getInstance(MovieDetailsActivity.this).moviesDAO().insertMovie(movie);
@@ -179,7 +174,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
                 view.setBackground(getDrawable(android.R.drawable.btn_star_big_off));
                 isFavorite = false;
             }
-            isSetFavouriteTaskDone = true;
         }
     }
 }
