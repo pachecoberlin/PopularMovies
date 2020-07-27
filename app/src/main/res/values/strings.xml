@@ -17,6 +17,7 @@
     <string name="movie">MOVIE</string>
     <string name="movie_poster_in_landscape">movie poster in landscape</string>
     <string name="details">Movie Details</string>
+    <string name="play_button">play button</string>
     <string-array name="sortByCategories">
         <item>Favorites</item>
         <item>most popular</item>

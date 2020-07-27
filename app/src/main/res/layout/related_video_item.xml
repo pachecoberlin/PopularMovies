@@ -14,6 +14,8 @@
         android:adjustViewBounds="true"
         android:background="@android:drawable/ic_media_play"
         android:contentDescription="@string/movie_poster"
+        android:foreground="@android:drawable/ic_media_play"
+        android:foregroundGravity="center"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +27,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/iv_video"
         app:layout_constraintEnd_toEndOf="@id/iv_video"
+        app:layout_constraintStart_toStartOf="@id/iv_video"
         app:layout_constraintTop_toBottomOf="@id/iv_video" />
 </androidx.constraintlayout.widget.ConstraintLayout>
