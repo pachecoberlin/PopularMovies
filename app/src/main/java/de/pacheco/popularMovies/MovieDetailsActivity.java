@@ -14,17 +14,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.Collections;
-import java.util.List;
-
 import de.pacheco.popularMovies.databinding.CollapsingToolbarBinding;
 import de.pacheco.popularMovies.model.Movie;
 import de.pacheco.popularMovies.model.MovieDB;
-import de.pacheco.popularMovies.model.RelatedVideo;
-import de.pacheco.popularMovies.model.Review;
+import de.pacheco.popularMovies.model.ReviewResults;
+import de.pacheco.popularMovies.model.TrailerResults;
 import de.pacheco.popularMovies.recycleviews.RelatedVideosAdapter;
 import de.pacheco.popularMovies.recycleviews.ReviewsAdapter;
 import de.pacheco.popularMovies.util.MoviesUtil;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MovieDetailsActivity extends AppCompatActivity {
 
@@ -67,6 +67,31 @@ public class MovieDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
     }
 
+    private void fetchReviewsAndTrailers(int movieID, ReviewsAdapter reviewsAdapter, RelatedVideosAdapter relatedVideosAdapter) {
+        Call<ReviewResults> reviewResultsCall = MoviesUtil.getReviews(movieID);
+        reviewResultsCall.enqueue(new Callback<ReviewResults>() {
+            @Override
+            public void onResponse(Call<ReviewResults> call, Response<ReviewResults> response) {
+                reviewsAdapter.setReviewsData(response.body().results);
+            }
+            @Override
+            public void onFailure(Call<ReviewResults> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+        Call<TrailerResults> trailerResultsCall = MoviesUtil.getTrailer(movieID);
+        trailerResultsCall.enqueue(new Callback<TrailerResults>() {
+            @Override
+            public void onResponse(Call<TrailerResults> call, Response<TrailerResults> response) {
+                relatedVideosAdapter.setVideosData(response.body().results);
+            }
+            @Override
+            public void onFailure(Call<TrailerResults> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+    }
+
     private void fillViews(RelatedVideosAdapter relatedVideosAdapter, ReviewsAdapter reviewsAdapter) {
         Intent intent = getIntent();
         if (!intent.hasExtra(Intent.EXTRA_TEXT)) {
@@ -91,11 +116,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
         String rating = movieInformation[4] + "/10";
         this.rating.setText(rating);
         plot.setText(movieInformation[5]);
+        //noinspection deprecation
         new SetFavoriteButtonTask().execute();
-        new FetchTask<Review>(null, reviewsAdapter).execute(MoviesUtil.REVIEWS,
-                movieInformation[0]);
-        new FetchTask<RelatedVideo>(relatedVideosAdapter, null).execute(MoviesUtil.RELATED_VIDEOS,
-                movieInformation[0]);
+        fetchReviewsAndTrailers(movie.id, reviewsAdapter, relatedVideosAdapter);
     }
 
     public void toggleFavorite(View view) {
@@ -108,43 +131,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
         //TODO Thread.start verwendne damit das richtig in die DB geschrieben wird, weil
         // AsyncTask irgendwann startet nicht sofort
         toggleFavoriteTask = new ToggleFavoriteTask(view, isFavorite);
+        //noinspection deprecation
         toggleFavoriteTask.execute(movie);
     }
 
-    public static class FetchTask<T> extends AsyncTask<String, Void, List<T>> {
-
-        private String whichInfo;
-        private final RelatedVideosAdapter relatedVideosAdapter;
-        private final ReviewsAdapter reviewsAdapter;
-
-        public FetchTask(RelatedVideosAdapter relatedVideosAdapter, ReviewsAdapter reviewsAdapter) {
-            this.relatedVideosAdapter = relatedVideosAdapter;
-            this.reviewsAdapter = reviewsAdapter;
-        }
-
-        @Override
-        protected List<T> doInBackground(String... params) {
-            whichInfo = params[0];
-            if (MoviesUtil.REVIEWS.equals(whichInfo))
-                return (List<T>) MoviesUtil.getReviews(params[1]);
-            if (MoviesUtil.RELATED_VIDEOS.equals(whichInfo))
-                return (List<T>) MoviesUtil.getTrailer(params[1]);
-            return Collections.emptyList();
-        }
-
-        @SuppressWarnings("unchecked")
-        @Override
-        protected void onPostExecute(List<T> list) {
-            if (list != null && !list.isEmpty()) {
-                if (MoviesUtil.RELATED_VIDEOS.equals(whichInfo)) {
-                    relatedVideosAdapter.setVideosData((List<RelatedVideo>) list);
-                } else if (MoviesUtil.REVIEWS.equals(whichInfo)) {
-                    reviewsAdapter.setReviewsData((List<Review>) list);
-                }
-            }
-        }
-    }
-
+    @SuppressWarnings("deprecation")
     @SuppressLint("StaticFieldLeak")
     public class ToggleFavoriteTask extends AsyncTask<Movie, Void, Void> {
 
@@ -169,6 +160,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressWarnings("deprecation")
     @SuppressLint("StaticFieldLeak")
     private class SetFavoriteButtonTask extends AsyncTask<Void, Void, Boolean> {
         @Override

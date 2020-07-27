@@ -1,24 +1,23 @@
 package de.pacheco.popularMovies.util;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import androidx.lifecycle.MutableLiveData;
 
 import java.util.List;
 
 import de.pacheco.popularMovies.ApiKey;
 import de.pacheco.popularMovies.model.Movie;
 import de.pacheco.popularMovies.model.MovieResults;
-import de.pacheco.popularMovies.model.RelatedVideo;
-import de.pacheco.popularMovies.model.Review;
 import de.pacheco.popularMovies.model.ReviewResults;
 import de.pacheco.popularMovies.model.TrailerResults;
-import retrofit.RestAdapter;
-import retrofit.converter.GsonConverter;
-import retrofit.http.GET;
-import retrofit.http.Path;
-import retrofit.http.Query;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
-//TODO implement CALL macht die Klassse
 public class MoviesUtil {
     public static final String FAVOURITES = "favourites";
     public static final String W1280 = "w1280";
@@ -26,7 +25,7 @@ public class MoviesUtil {
     private static final String TAG = MoviesUtil.class.getSimpleName();
     public static final String POPULAR = "popular";
     public static final String TOP_RATED = "top_rated";
-    private static final String TMDB_MOVIES_URL = "https://api.themoviedb.org/3/movie/";
+    private static final String TMDB_MOVIES_URL = "https://api.themoviedb.org";
     public static final String BASE_POSTER_URL = "https://image.tmdb.org/t/p/";
     public static final String DEFAULT_SIZE = "w300";
     /**
@@ -37,57 +36,71 @@ public class MoviesUtil {
     public static final String REVIEWS = "/reviews";
     public static final GetMoviesAPI SERVICE = getMovieService();
 
-    public static void addAllMovies(List<Movie> movies, String criteria) {
-        Integer maxPage = SERVICE.getMovies(criteria, API_KEY_VALUE, 1).totalPages;
-        if (maxPage < 0) {
+
+    public interface GetMoviesAPI {
+        @GET("/3/movie/{criteria}")
+        Call<MovieResults> getMovies(@Path("criteria") String criteria,
+                                     @Query("api_key") String apiKey, @Query("page") int page);
+
+        @GET("/3/movie/{movieId}/reviews")
+        Call<ReviewResults> getReviews(@Path("movieId") int movieId,
+                                       @Query("api_key") String apiKey);
+
+        @GET("/3/movie/{movieId}/videos")
+        Call<TrailerResults> getTrailer(@Path("movieId") int movieId,
+                                        @Query("api_key") String apiKey);
+    }
+
+    public static void getMovies(String criteria, MutableLiveData<List<Movie>> liveData) {
+        SERVICE.getMovies(criteria, API_KEY_VALUE, 1).enqueue(new Callback<MovieResults>() {
+            @Override
+            public void onResponse(Call<MovieResults> call, Response<MovieResults> response) {
+                MovieResults body = response.body();
+                List<Movie> movies = body.results;
+                liveData.setValue(movies);
+                addAllMovies(criteria, movies, body.totalPages);
+            }
+            @Override
+            public void onFailure(Call<MovieResults> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+
+    }
+
+    public static void addAllMovies(String criteria, List<Movie> movies, Integer maxPages) {
+        if (maxPages < 0) {
             return;
         }
         int pageCounter = 2;
-        while (pageCounter <= maxPage) {
-            MovieResults movieResults = SERVICE.getMovies(criteria, API_KEY_VALUE, pageCounter++);
-            movies.addAll(movieResults.results);
+        while (pageCounter <= maxPages) {
+            SERVICE.getMovies(criteria, API_KEY_VALUE, pageCounter++).enqueue(new Callback<MovieResults>() {
+                @Override
+                public void onResponse(Call<MovieResults> call, Response<MovieResults> response) {
+                    MovieResults body = response.body();
+                    movies.addAll(body.results);
+                }
+                @Override
+                public void onFailure(Call<MovieResults> call, Throwable t) {
+                    t.printStackTrace();
+                }
+            });
         }
     }
 
-    public interface GetMoviesAPI {
-        @GET("/{criteria}")
-        MovieResults getMovies(@Path("criteria") String criteria,
-                               @Query("api_key") String apiKey, @Query("page") int page);
-
-        @GET("/{movieId}/reviews")
-        ReviewResults getReviews(@Path("movieId") String movieId, @Query("api_key") String apiKey);
-
-        @GET("/{movieId}/videos")
-        TrailerResults getTrailer(@Path("movieId") String movieId, @Query("api_key") String apiKey);
-    }
-
-    public static List<Movie> getFirstMovies(String criteria) {
-        MovieResults movieResults = SERVICE.getMovies(criteria, API_KEY_VALUE, 1);
-        return movieResults.results;
-    }
-
     private static GetMoviesAPI getMovieService() {
-        Gson gson = new GsonBuilder().create();
-
-        RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint(TMDB_MOVIES_URL)
-                .setConverter(new GsonConverter(gson))
+        Retrofit restAdapter = new Retrofit.Builder()
+                .baseUrl(TMDB_MOVIES_URL)
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
         return restAdapter.create(GetMoviesAPI.class);
     }
 
-    public static List<Review> getReviews(String movieId) {
-        ReviewResults reviewResults = SERVICE.getReviews(movieId, API_KEY_VALUE);
-        return reviewResults.results;
+    public static Call<ReviewResults> getReviews(int movieId) {
+        return SERVICE.getReviews(movieId, API_KEY_VALUE);
     }
 
-    public static List<RelatedVideo> getTrailer(String movieId) {
-        TrailerResults trailerResults = SERVICE.getTrailer(movieId, API_KEY_VALUE);
-        return trailerResults.results;
-    }
-
-    public static List<Movie> getFirstMovies() {
-        return getFirstMovies(POPULAR);
+    public static Call<TrailerResults> getTrailer(int movieId) {
+        return SERVICE.getTrailer(movieId, API_KEY_VALUE);
     }
 }
