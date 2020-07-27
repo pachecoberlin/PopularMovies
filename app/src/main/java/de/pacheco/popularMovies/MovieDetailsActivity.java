@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.Collections;
 import java.util.List;
 
 import de.pacheco.popularMovies.databinding.CollapsingToolbarBinding;
@@ -66,7 +67,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
     }
 
-    @SuppressWarnings("deprecation")
     private void fillViews(RelatedVideosAdapter relatedVideosAdapter, ReviewsAdapter reviewsAdapter) {
         Intent intent = getIntent();
         if (!intent.hasExtra(Intent.EXTRA_TEXT)) {
@@ -98,7 +98,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
                 movieInformation[0]);
     }
 
-    @SuppressWarnings("deprecation")
     public void toggleFavorite(View view) {
         isFavorite = !isFavorite;
         if (isFavorite) {
@@ -112,7 +111,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
         toggleFavoriteTask.execute(movie);
     }
 
-    @SuppressWarnings("deprecation")
     public static class FetchTask<T> extends AsyncTask<String, Void, List<T>> {
 
         private String whichInfo;
@@ -127,7 +125,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
         @Override
         protected List<T> doInBackground(String... params) {
             whichInfo = params[0];
-            return MoviesUtil.getMovieInformation(whichInfo, params[1]);
+            if (MoviesUtil.REVIEWS.equals(whichInfo))
+                return (List<T>) MoviesUtil.getReviews(params[1]);
+            if (MoviesUtil.RELATED_VIDEOS.equals(whichInfo))
+                return (List<T>) MoviesUtil.getTrailer(params[1]);
+            return Collections.emptyList();
         }
 
         @SuppressWarnings("unchecked")
@@ -144,7 +146,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
     }
 
     @SuppressLint("StaticFieldLeak")
-    @SuppressWarnings("deprecation")
     public class ToggleFavoriteTask extends AsyncTask<Movie, Void, Void> {
 
         private final View view;
@@ -169,7 +170,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
     }
 
     @SuppressLint("StaticFieldLeak")
-    @SuppressWarnings("deprecation")
     private class SetFavoriteButtonTask extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... voids) {

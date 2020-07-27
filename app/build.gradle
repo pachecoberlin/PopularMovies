@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion "30.0.0"
     defaultConfig {
         applicationId "de.pacheco.popularmovies"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -47,4 +47,6 @@ dependencies {
     // Annotation processor
 //    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
     annotationProcessor "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    implementation "com.squareup.retrofit:retrofit:1.9.0"
 }
