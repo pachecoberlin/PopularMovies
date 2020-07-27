@@ -21,6 +21,9 @@ public class Movie implements Parcelable {
     @SerializedName("poster_path")
     public String posterPath;
 
+    @SerializedName("backdrop_path")
+    public String backdropPath;
+
     @PrimaryKey
     @SerializedName("id")
     public int id;
@@ -40,11 +43,14 @@ public class Movie implements Parcelable {
     @SerializedName("original_language")
     public String originalLanguage;
 
-    public Movie(){}
+    public Movie() {
+    }
+
     protected Movie(Parcel in) {
         rating = in.readFloat();
         popularity = in.readFloat();
         posterPath = in.readString();
+        backdropPath = in.readString();
         id = in.readInt();
         title = in.readString();
         originalTitle = in.readString();
@@ -84,11 +90,16 @@ public class Movie implements Parcelable {
         parcel.writeFloat(rating);
         parcel.writeFloat(popularity);
         parcel.writeString(posterPath);
+        parcel.writeString(backdropPath);
         parcel.writeInt(id);
         parcel.writeString(title);
         parcel.writeString(originalTitle);
         parcel.writeString(plot);
         parcel.writeString(releaseDate);
         parcel.writeString(originalLanguage);
+    }
+
+    public String getBackdropPath() {
+        return MoviesUtil.BASE_POSTER_URL + MoviesUtil.W1280 + backdropPath;
     }
 }

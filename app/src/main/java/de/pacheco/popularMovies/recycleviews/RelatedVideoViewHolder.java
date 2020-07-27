@@ -11,25 +11,31 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import de.pacheco.popularMovies.R;
 import de.pacheco.popularMovies.model.RelatedVideo;
 
 public class RelatedVideoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static final String JPG_SIZE = "/0.jpg";
+    public static final String YOUTUBE_THUMBNAIL_URL = "https://img.youtube.com/vi/";
     private final Activity activity;
     private final TextView textView;
+    private final ImageView thumbnail;
     private RelatedVideo video;
 
     public RelatedVideoViewHolder(@NonNull View itemView, Activity activity) {
         super(itemView);
-        ImageView imageView = itemView.findViewById(R.id.iv_video);
+        thumbnail = itemView.findViewById(R.id.iv_video);
         textView = itemView.findViewById(R.id.tv_trailer);
-        imageView.setOnClickListener(this);
+        thumbnail.setOnClickListener(this);
         this.activity = activity;
     }
 
     public void setVideo(RelatedVideo video) {
         this.video = video;
         textView.setText(video.name);
+        Picasso.get().load(YOUTUBE_THUMBNAIL_URL +video.key+ JPG_SIZE).placeholder(android.R.drawable.ic_media_play).into(thumbnail);
     }
 
     @Override

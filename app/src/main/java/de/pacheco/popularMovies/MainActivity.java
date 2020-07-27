@@ -1,18 +1,16 @@
 package de.pacheco.popularMovies;
 
-import android.annotation.SuppressLint;
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ProgressBar;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -29,46 +27,111 @@ import de.pacheco.popularMovies.util.MoviesUtil;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String BUNDLE_LAYOUT = "BUNDLE_LAYOUT";
+    public static final String BUNDLE_SELECTION = "Selection";
 
     private MoviePosterAdapter moviePosterAdapter;
-    private ProgressBar progressBar;
-    private TextView networkErrorMessage;
     private List<Movie> movies = Collections.emptyList();
-    private View contents;
     private List<Movie> favorites;
+    private List<Movie> populars;
+    private List<Movie> topRated;
+    private String selection = MoviesUtil.FAVOURITES;
+    private GridLayoutManager layoutManager;
+    private String oldSelection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-        progressBar = binding.pbLoadingIndicator;
-        networkErrorMessage = binding.tvErrorMessageDisplay;
-        contents = binding.contents;
-        progressBar = findViewById(R.id.pb_loading_indicator);
-        networkErrorMessage = findViewById(R.id.tv_error_message_display);
-        contents = findViewById(R.id.contents);
-        Spinner spinner = findViewById(R.id.spinner_sortBy);
-        spinner.setOnItemSelectedListener(getSpinnerListener());
-        RecyclerView moviePosters = findViewById(R.id.rv_movie_overview);
-        moviePosters.setHasFixedSize(true);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
+        binding.spinnerSortBy.setOnItemSelectedListener(getSpinnerListener());
+        binding.rvMovieOverview.setHasFixedSize(true);
+        layoutManager = new GridLayoutManager(this, calculateNoOfColumns(),
                 RecyclerView.VERTICAL, false);
-        moviePosters.setLayoutManager(layoutManager);
+        binding.rvMovieOverview.setLayoutManager(layoutManager);
         moviePosterAdapter = new MoviePosterAdapter(this);
-        moviePosters.setAdapter(moviePosterAdapter);
+        binding.rvMovieOverview.setAdapter(moviePosterAdapter);
+        View view = binding.getRoot();
+        setContentView(view);
         setupViewModel();
+        //data is set within spinner listener, which is called after created
+    }
+
+    public int calculateNoOfColumns() {
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
+        int scalingFactor = 200;
+        int noOfColumns = (int) (dpWidth / scalingFactor);
+        if (noOfColumns < 2)
+            noOfColumns = 2;
+        return noOfColumns;
     }
 
     /**
      * If the activity is re-created, it receives the same ViewModelProvider instance that was created by the first activity.
      */
     private void setupViewModel() {
-        new ViewModelProvider(this).get(MoviesViewModel.class).getMovies().observe(this,
+        MoviesViewModel moviesViewModel = new ViewModelProvider(this).get(MoviesViewModel.class);
+        moviesViewModel.getFavouriteMovies().observe(this,
                 list -> {
-                    moviePosterAdapter.setMovieData(list);
                     favorites = list;
+                    if (selection.equals(MoviesUtil.FAVOURITES)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
                 });
+        moviesViewModel.getPopularMovies().observe(this,
+                list -> {
+                    populars = list;
+                    if (selection.equals(MoviesUtil.POPULAR)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
+                });
+        moviesViewModel.getTopRatedMovies().observe(this,
+                list -> {
+                    topRated = list;
+                    if (selection.equals(MoviesUtil.TOP_RATED)) {
+                        moviePosterAdapter.notifyDataSetChanged();
+                    }
+                });
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(BUNDLE_LAYOUT,
+                layoutManager.onSaveInstanceState());
+        outState.putString(BUNDLE_SELECTION, selection);
+    }
+
+    @Override
+    public void onRestoreInstanceState(@Nullable Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            super.onRestoreInstanceState(savedInstanceState);
+            selection = savedInstanceState.getString(BUNDLE_SELECTION);
+            setMovieData(selection);
+            Parcelable savedRecyclerLayoutState = savedInstanceState.getParcelable(BUNDLE_LAYOUT);
+            layoutManager.onRestoreInstanceState(savedRecyclerLayoutState);
+        }
+    }
+
+    private void setMovieData(String selection) {
+        if (selection == null) {
+            selection = MoviesUtil.FAVOURITES;
+        }
+        switch (selection) {
+            case MoviesUtil.POPULAR:
+                moviePosterAdapter.setMovieData(populars);
+                movies = populars;
+                break;
+            case MoviesUtil.TOP_RATED:
+                moviePosterAdapter.setMovieData(topRated);
+                movies = topRated;
+                break;
+            case MoviesUtil.FAVOURITES:
+            default:
+                moviePosterAdapter.setMovieData(favorites);
+                movies = favorites;
+                break;
+        }
     }
 
     @Override
@@ -101,77 +164,27 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showErrorMessage() {
-        networkErrorMessage.setVisibility(View.VISIBLE);
-        contents.setVisibility(View.INVISIBLE);
-    }
-
-    private void showMoviePosterView() {
-        networkErrorMessage.setVisibility(View.INVISIBLE);
-        contents.setVisibility(View.VISIBLE);
-    }
-
-    @SuppressWarnings("deprecation")
     public AdapterView.OnItemSelectedListener getSpinnerListener() {
         return new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
-                    moviePosterAdapter.setMovieData(favorites);
-                    movies = favorites;
+                    selection = MoviesUtil.FAVOURITES;
+                } else if (i == 1) {
+                    selection = MoviesUtil.POPULAR;
                 } else {
-                    new FetchMoviesTask().execute(i == 1 ? MoviesUtil.POPULAR : MoviesUtil.RATED);
+                    selection = MoviesUtil.TOP_RATED;
                 }
+                if (oldSelection != null && !oldSelection.equals(selection)) {
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                }
+                setMovieData(selection);
+                oldSelection = selection;
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         };
-    }
-
-    @SuppressLint("StaticFieldLeak")
-    @SuppressWarnings("deprecation")
-    public class FetchMoviesTask extends AsyncTask<String, List<Movie>, List<Movie>> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            progressBar.setVisibility(View.VISIBLE);
-        }
-
-        @Override
-        protected List<Movie> doInBackground(String... params) {
-            if (params.length < 1) {
-                return MoviesUtil.getFirstMovies();
-            }
-            String criteria = params[0];
-            List<Movie> movies = MoviesUtil.getFirstMovies(criteria);
-            //noinspection unchecked
-            publishProgress(movies);
-            MoviesUtil.addAllMovies(movies, criteria);
-            return movies;
-        }
-
-        @SafeVarargs
-        @Override
-        protected final void onProgressUpdate(List<Movie>... values) {
-            progressBar.setVisibility(View.INVISIBLE);
-            showMoviePosterView();
-            MainActivity.this.movies = values[0];
-            moviePosterAdapter.setMovieData(movies);
-        }
-
-        @Override
-        protected void onPostExecute(List<Movie> movies) {
-            progressBar.setVisibility(View.INVISIBLE);
-            if (movies != null && !movies.isEmpty()) {
-                showMoviePosterView();
-                MainActivity.this.movies = movies;
-                moviePosterAdapter.setMovieData(movies);
-            } else {
-                showErrorMessage();
-            }
-        }
     }
 }

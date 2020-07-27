@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:fullBackupContent="@xml/backup_descriptor">
-        <activity android:name="de.pacheco.popularMovies.MovieDetailsActivity">
+        <activity android:name="de.pacheco.popularMovies.MovieDetailsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/details">
         </activity>
-        <activity android:name="de.pacheco.popularMovies.MainActivity">
+        <activity android:name="de.pacheco.popularMovies.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
